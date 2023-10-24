@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const baseNeue = localFont({
   variable: '--font-base-neue',
@@ -87,7 +88,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${baseNeue.variable} ${clash.variable}  `}>{children}</body>
+      <body className={`${baseNeue.variable} ${clash.variable} font-clash `}>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
