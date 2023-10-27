@@ -1,5 +1,6 @@
 import Projects from "@/components/Projects";
 import ClientSlide from "./_components/ClientSlide";
+import ConnectSection from "./_components/ConnectSection";
 
 export default function Home() {
   return (
@@ -47,6 +48,12 @@ export default function Home() {
      <div className="h-screen bg-mydark  py-10">
         
        <ClientSlide/>
+      
+    </div>
+
+    <div className="h-screen bg-mydark  py-10">
+        
+      <ConnectSection/>
       
     </div>
    </>

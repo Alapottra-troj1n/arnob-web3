@@ -129,7 +129,7 @@ const Projects = () => {
       </div>
 
       <div className="mt-20 flex gap-3 items-center justify-center group">
-        <h2 className="text-center cursor-pointer hover:text-primary transition-all text-xl" >View More Works</h2>
+        <h2 className="text-center cursor-pointer hover:text-primary transition-all text-sm" >View More Works</h2>
         <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
       </div>
     </div>
