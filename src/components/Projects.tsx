@@ -1,6 +1,7 @@
+"use client";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div className="flex justify-center flex-col max-w-6xl mx-auto">
@@ -10,7 +11,7 @@ const Projects = () => {
             ALL
           </button>{" "}
           /{" "}
-          <button className=" hover:text-primary transition-all">
+          <button className=" text-primary transition-all">
             WEB3.0 PROJECTS
           </button>{" "}
           /{" "}
@@ -24,7 +25,14 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 w-full gap-10 mt-10">
+      <motion.div
+        initial={{ translateY: 100, opacity: 0,  }}
+        whileInView={{ translateY: 0,opacity:1   }}
+        transition={{duration: 1, ease: 'easeOut'}}
+        
+        
+        className="grid grid-cols-2 w-full gap-10 mt-10"
+      >
         <div>
           <div className="relative h-[25rem]">
             <Image src={"/project1.png"} fill alt="mad-meta-scientist" />
@@ -37,7 +45,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="border py-4 px-7 rounded-3xl text-mygray border-mygray cursor-pointer group">
-            <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+              <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
         </div>
@@ -53,7 +61,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="border py-4 px-7 rounded-3xl text-mygray border-mygray cursor-pointer group">
-            <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+              <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
         </div>
@@ -70,7 +78,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="border py-4 px-7 rounded-3xl text-mygray border-mygray cursor-pointer group">
-            <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+              <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
         </div>
@@ -103,7 +111,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="border py-4 px-7 rounded-3xl text-mygray border-mygray cursor-pointer group">
-            <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+              <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
         </div>
@@ -120,16 +128,16 @@ const Projects = () => {
               </p>
             </div>
             <div className="border py-4 px-7 rounded-3xl text-mygray border-mygray cursor-pointer group">
-            <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+              <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
         </div>
-
-
-      </div>
+      </motion.div>
 
       <div className="mt-20 flex gap-3 items-center justify-center group">
-        <h2 className="text-center cursor-pointer hover:text-primary transition-all text-sm" >View More Works</h2>
+        <h2 className="text-center cursor-pointer hover:text-primary transition-all text-sm">
+          View More Works
+        </h2>
         <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
       </div>
     </div>
