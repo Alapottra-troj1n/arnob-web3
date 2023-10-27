@@ -88,7 +88,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${baseNeue.variable} ${clash.variable} font-clash `}>
+      <body className={`${baseNeue.variable} ${clash.variable} font-clash overflow-x-hidden text-mywhite`}>
         <Navbar/>
         {children}
       </body>
