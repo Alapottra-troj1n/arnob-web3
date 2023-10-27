@@ -1,5 +1,9 @@
+import Projects from "@/components/Projects";
+import ClientSlide from "./_components/ClientSlide";
+
 export default function Home() {
   return (
+   <>
     <div className="h-screen bg-mydark flex justify-center items-center">
       <div className="max-w-6xl mx-auto mt-24">
         <div className="relative w-[70%] mx-auto">
@@ -24,11 +28,27 @@ export default function Home() {
         </div>
         <div className="mt-10 w-[40%] mx-auto">
           <p className="text-mywhite uppercase text-center  text-3xl  tracking-wide">
-            HELPING <br /> <span className="text-primary" >WEB3.0</span> STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
+            HELPING <br /> <span className="text-primary">WEB3.0</span> STARTUPS{" "}
+            <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
             STRATEGY.
           </p>
         </div>
+       
       </div>
     </div>
+
+
+    <div className="min-h-screen bg-mydark  py-10">
+        
+         <Projects />
+       
+     </div>
+
+     <div className="h-screen bg-mydark  py-10">
+        
+       <ClientSlide/>
+      
+    </div>
+   </>
   );
 }
