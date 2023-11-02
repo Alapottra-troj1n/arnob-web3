@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="bg-mydark py-7 w-full fixed z-50" >
+    <div className="bg-mydark py-7 lg:w-full fixed z-50 px-5 lg:px-0 overflow-hidden" >
       <div className="max-w-6xl mx-auto flex justify-between text-mywhite">
         <div>
           <Image
@@ -15,7 +15,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="flex gap-6 items-center list-none">
+        <div className="hidden lg:flex gap-6 items-center list-none">
           <Link className="hover:text-primary transition-colors" href={"/work"}>
             <li>WORK</li>
           </Link>

@@ -4,9 +4,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="flex justify-center flex-col max-w-6xl mx-auto">
-      <div className="flex  gap-5 items-center justify-center">
-        <div className="flex gap-5 text-xs">
+    <div className="flex justify-center flex-col max-w-6xl mx-auto px-5 lg:px-0">
+      <div className="flex lg:gap-5 gap-3 items-center justify-center">
+        <div className="flex lg:gap-5 gap-3 text-xs flex-wrap justify-center lg:justify-start">
           <button className="underline hover:text-primary transition-all">
             ALL
           </button>{" "}
@@ -31,11 +31,11 @@ const Projects = () => {
         transition={{duration: 1, ease: 'easeOut'}}
         
         
-        className="grid grid-cols-2 w-full gap-10 mt-10"
+        className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 mt-10"
       >
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project1.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project1.png"} fill alt="mad-meta-scientist" className="object-cover " />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">

@@ -10,7 +10,7 @@ const Footer = () => {
               ©2023 Arnob Chakma. All rights reserved.
             </p>
           </div>
-          <div className="uppercase flex gap-4 text-sm">
+          <div className="uppercase flex flex-wrap gap-4 text-sm">
             <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
               Behance
               <MoveUpRight
