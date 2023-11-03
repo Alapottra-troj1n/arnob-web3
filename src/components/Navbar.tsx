@@ -1,10 +1,13 @@
-import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { headers } from 'next/headers';
 
 const Navbar = () => {
+  const headersList = headers();
+  const fullUrl = headersList.get('referer') || "";
+
   return (
-    <div className="bg-mydark w-full lg:fixed z-50 px-5 lg:px-0 overflow-hidden">
+    <div className={`bg-mydark w-full lg:fixed z-50 px-5 lg:px-0 overflow-hidden ${fullUrl.includes('/studio') && 'hidden'}`}>
       <div className="max-w-6xl py-7 mx-auto flex justify-between items-center text-mywhite">
         <div>
           <Image

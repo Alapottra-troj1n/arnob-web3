@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.19.1",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.289.0",
     "next": "13.5.6",
+    "next-sanity": "^5.5.10",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
+    "sanity": "^3.19.1",
+    "styled-components": "^6.1.0",
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
