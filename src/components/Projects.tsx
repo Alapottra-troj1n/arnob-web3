@@ -33,9 +33,10 @@ const Projects = () => {
         
         className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 mt-10"
       >
+
         <div>
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
-            <Image src={"/project1.png"} fill alt="mad-meta-scientist" className="object-cover " />
+            <Image src={"/project1.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">
@@ -49,9 +50,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project2.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project2.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">
@@ -67,8 +69,8 @@ const Projects = () => {
         </div>
 
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project3.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project3.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">
@@ -82,9 +84,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project4.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project4.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">
@@ -100,8 +103,8 @@ const Projects = () => {
         </div>
 
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project5.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project5.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">
@@ -117,8 +120,8 @@ const Projects = () => {
         </div>
 
         <div>
-          <div className="relative h-[25rem]">
-            <Image src={"/project6.png"} fill alt="mad-meta-scientist" />
+          <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <Image src={"/project6.png"} fill alt="mad-meta-scientist" className="object-cover"  />
           </div>
           <div className="flex justify-between items-center mt-5 px-2">
             <div className="cursor-pointer">

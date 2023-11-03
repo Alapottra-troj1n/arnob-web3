@@ -28,13 +28,12 @@ export default function Home() {
               ARNOB CAN DESIGN FOR YOU
             </h1>
           </div>
-          <div className="mt-10 lg:w-[40%] mx-auto   animate-fade-up animate-once animate-duration-1000 animate-ease-in delay-500">
-            <p className="text-mywhite uppercase text-center  text-3xl tracking-wide ">
+          <div className="mt-10 lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-1000 animate-ease-in delay-500">
+            <p className="text-mywhite uppercase text-center text-xl lg:text-3xl tracking-wide ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
               STRATEGY.
             </p>
-          
           </div>
           <div className="flex justify-center items-center my-8">
             <img
@@ -50,11 +49,11 @@ export default function Home() {
         <Projects />
       </div>
 
-      <div className="h-screen bg-mydark  py-10">
+      <div className="lg:h-screen bg-mydark  py-10">
         <ClientSlide />
       </div>
 
-      <div className="h-screen bg-mydark  py-10">
+      <div className="lg:h-screen bg-mydark  py-10">
         <ConnectSection />
       </div>
     </>
