@@ -25,16 +25,18 @@ const Projects = () => {
         </div>
       </div>
 
-      <motion.div
-        initial={{ translateY: 100, opacity: 0,  }}
-        whileInView={{ translateY: 0,opacity:1   }}
-        transition={{duration: 1, ease: 'easeOut'}}
+      <div
+      
         
         
         className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 mt-10"
       >
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project1.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
@@ -49,9 +51,13 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project2.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
@@ -66,9 +72,13 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project3.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
@@ -83,9 +93,13 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project4.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
@@ -100,9 +114,13 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project5.png"} fill alt="mad-meta-scientist" className="object-cover" />
           </div>
@@ -117,9 +135,13 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ translateY: 100, opacity: 0,  }}
+          whileInView={{ translateY: 0,opacity:1   }}
+          transition={{duration: 1, ease: 'easeOut'}}
+        >
           <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
             <Image src={"/project6.png"} fill alt="mad-meta-scientist" className="object-cover"  />
           </div>
@@ -134,8 +156,8 @@ const Projects = () => {
               <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <div className="mt-20 flex gap-3 items-center justify-center group">
         <h2 className="text-center cursor-pointer hover:text-primary transition-all text-sm">

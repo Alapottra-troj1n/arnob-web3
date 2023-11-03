@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className="h-screen bg-mydark flex justify-center items-center ">
-        <div className="max-w-6xl mx-auto mt-28 lg:mt-24 px-5 lg:px-0">
+        <div className="max-w-6xl mx-auto lg:mt-24 px-5 lg:px-0">
           <div className="relative w-[70%] mx-auto ">
             <img
               src="/star.svg"
