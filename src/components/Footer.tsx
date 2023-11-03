@@ -1,8 +1,11 @@
 import { MoveUpRight } from "lucide-react";
+import { headers } from 'next/headers';
 
 const Footer = () => {
+  const headersList = headers();
+  const fullUrl = headersList.get('referer') || "";
   return (
-    <div className="bg-mydark">
+    <div className={`bg-mydark ${fullUrl.includes('/studio') && 'hidden'}`}>
       <div className="max-w-6xl mx-auto py-14 hidden lg:block">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
