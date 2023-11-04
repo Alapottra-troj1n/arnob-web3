@@ -1,13 +1,15 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { headers } from 'next/headers';
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const headersList = headers();
-  const fullUrl = headersList.get('referer') || "";
+ const pathname = usePathname();
 
+ console.log(pathname)
+ 
   return (
-    <div className={`bg-mydark w-full lg:fixed z-50 px-5 lg:px-0 overflow-hidden ${fullUrl.includes('/studio') && 'hidden'}`}>
+    <div className={`bg-mydark w-full lg:fixed z-10  px-5 lg:px-0 overflow-hidden ${pathname.includes('/studio') && 'hidden z-0'}`}>
       <div className="max-w-6xl py-7 mx-auto flex justify-between items-center text-mywhite">
         <div>
           <Image
