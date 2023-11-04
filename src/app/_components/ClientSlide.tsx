@@ -8,7 +8,7 @@ const ClientSlide = () => {
       <motion.div
         initial={{ translateY: 100, opacity: 0 }}
         whileInView={{ translateY: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
       
         className="mx-auto"
       >

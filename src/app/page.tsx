@@ -2,7 +2,35 @@ import Projects from "@/components/Projects";
 import ClientSlide from "./_components/ClientSlide";
 import ConnectSection from "./_components/ConnectSection";
 
-export default function Home() {
+import { Project } from "../../lib/types";
+import { sanityClient } from "../../sanity/lib/client";
+
+export default async function Home() {
+  const projects = await sanityClient.fetch<Project[]>({
+    query: `
+  *[_type == 'project'] {
+    _id,
+    title,
+    subtitle,
+    description,
+    mainImage{
+    asset->{url}
+    },
+    categories[]->{
+      title,
+    },
+    slug{
+    current
+    },
+    images[] {
+      asset->{url}
+    }
+  }
+
+`,
+    config: { cache: "no-cache" },
+  });
+
   return (
     <>
       <div className="h-screen bg-mydark flex justify-center items-center ">
@@ -28,7 +56,7 @@ export default function Home() {
               ARNOB CAN DESIGN FOR YOU
             </h1>
           </div>
-          <div className="mt-10 lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-1000 animate-ease-in delay-500">
+          <div className="mt-10 lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
             <p className="text-mywhite uppercase text-center text-xl lg:text-3xl tracking-wide ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
@@ -46,7 +74,7 @@ export default function Home() {
       </div>
 
       <div className="min-h-screen bg-mydark py-10   ">
-        <Projects />
+        <Projects projects={projects} />
       </div>
 
       <div className="lg:h-screen bg-mydark  py-10">
