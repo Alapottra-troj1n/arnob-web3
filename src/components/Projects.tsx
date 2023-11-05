@@ -30,16 +30,18 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 mt-10">
         {projects.map((project) => (
           <motion.div
+            key={project._id}
             initial={{ translateY: 100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="cursor-pointer"
           >
-            <div className="relative h-[25rem] overflow-hidden rounded-xl lg:rounded-none">
+            <div className="relative h-[25rem] overflow-hidden rounded-xl  w-full ">
               <Image
                 src={project.mainImage.asset.url}
                 fill
                 alt="mad-meta-scientist"
-                className="object-cover"
+                className="object-cover hover:scale-100 scale-105   transition-all duration-500"
               />
             </div>
             <div className="flex justify-between items-center mt-5 px-2">
