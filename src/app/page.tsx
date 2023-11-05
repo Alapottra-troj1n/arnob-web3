@@ -33,8 +33,8 @@ export default async function Home() {
 
   return (
     <>
-      <div className="h-screen bg-mydark flex justify-center items-center ">
-        <div className="max-w-6xl mx-auto lg:mt-24 px-5 lg:px-0">
+      <div className="min-h-screen bg-mydark flex justify-center items-center ">
+        <div className="max-w-6xl mx-auto lg:mt-48 px-5 lg:px-0">
           <div className="relative w-[70%] mx-auto ">
             <img
               src="/star.svg"
@@ -52,7 +52,7 @@ export default async function Home() {
               alt="digital architect"
               className="absolute right-[2.5rem] top-[-3.5rem]"
             />
-            <h1 className="text-center text-5xl lg:text-7xl text-mywhite font-baseNeue font-bold tracking-wide  ">
+            <h1 className="text-center text-5xl lg:text-7xl text-primary font-baseNeue font-bold tracking-wide  ">
               ARNOB CAN DESIGN FOR YOU
             </h1>
           </div>
@@ -70,15 +70,15 @@ export default async function Home() {
               className=" animate-spin-slow ease-in-out  md:hidden"
             />
           </div>
+
+          <div className=" bg-mydark pb-14  lg:pt-[148px] lg:pb-[241px]">
+            <ClientSlide />
+          </div>
         </div>
       </div>
 
       <div className="min-h-screen bg-mydark py-10   ">
         <Projects projects={projects} />
-      </div>
-
-      <div className="lg:h-screen bg-mydark  py-10">
-        <ClientSlide />
       </div>
 
       <div className="lg:h-screen bg-mydark  py-10">

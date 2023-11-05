@@ -6,13 +6,7 @@ const ConnectSection = () => {
   return (
     <div className="py-14 lg:h-full flex justify-center items-center flex-col lg:px-0 px-5">
       <div className="max-w-6xl mx-auto">
-        <div className="lg:flex justify-center mb-10 hidden">
-          <img 
-            src="/mascot.svg"
-            alt="mascot"
-            className="w-40 animate-bounce"
-          />
-        </div>
+      
         <motion.div
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}

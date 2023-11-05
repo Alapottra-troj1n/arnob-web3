@@ -1,26 +1,11 @@
 "use client";
 import Marquee from "react-fast-marquee";
-import { motion } from "framer-motion";
 
 const ClientSlide = () => {
   return (
-    <div className="py-14 lg:h-full flex justify-center items-center flex-col lg:px-0 px-5">
-      <motion.div
-        initial={{ translateY: 100, opacity: 0 }}
-        whileInView={{ translateY: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
-      
-        className="mx-auto"
-      >
-        <h1 className=" text-xl lg:text-4xl text-center uppercase font-bold text-primary hidden lg:block">
-          Some of the brands we <br /> have worked with
-        </h1>
-        <h1 className=" text-2xl lg:text-4xl text-center uppercase font-bold text-primary lg:hidden">
-          Some of the <br /> brands we have worked with
-        </h1>
-      </motion.div>
+    <div className=" flex justify-center items-center flex-col lg:px-0 px-5">
 
-      <div className="mt-20 hidden lg:block">
+      <div className=" hidden lg:block">
         <Marquee
           gradient={true}
           gradientColor="#060A0E"
