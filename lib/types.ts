@@ -4,6 +4,7 @@ interface Project {
   subtitle: string;
   service: string[],
   industry:string[],
+  year: number,
   description: string;
   mainImage: {
     asset: {
