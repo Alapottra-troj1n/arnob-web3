@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const baseNeue = localFont({
   variable: "--font-base-neue",
@@ -90,6 +91,7 @@ export default function RootLayout({
         className={`${baseNeue.variable} ${clash.variable} font-baseNeue overflow-x-hidden text-mywhite`}
       >
         <Navbar />
+        <Toaster />
         {children}
         <Footer/>
       </body>
