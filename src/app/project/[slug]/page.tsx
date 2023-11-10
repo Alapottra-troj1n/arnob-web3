@@ -96,17 +96,22 @@ const Project = () => {
           </div>
         </div>
         <div className="pt-16">
-          <h1 className="text-6xl font-black text-primary w-[50%] uppercase">
+          <motion.h1 
+          initial={{ translateY: 100, opacity: 0 }}
+          whileInView={{ translateY: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className="text-6xl font-black text-primary w-[50%] uppercase">
             {project?.title}
-          </h1>
+          </motion.h1>
           <p className="w-[50%] mt-9 text-lg font-normal font-clash ">
             {project?.description}
           </p>
         </div>
 
         <div className="mt-24 flex flex-col w-full h-full gap-y-4">
-          {project?.images.map((image) => (
+          {project?.images?.map((image) => (
             <motion.div
+              key={image.asset.url}
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -118,7 +123,7 @@ const Project = () => {
                 alt="project-img"
               />
             </motion.div>
-          ))}
+          )) || <p className="text-center text-sm pt-36 text-gray-500">No Photos Found</p> }
         </div>
         <div className="pt-60 pb-40">
           <motion.div
