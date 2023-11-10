@@ -54,7 +54,6 @@ export default defineType({
           type: "string",
         },
       ],
-      validation: (Rule) => Rule.min(1).max(100),
     }),
     defineField({
       name: "industry",
@@ -65,7 +64,6 @@ export default defineType({
           type: "string",
         },
       ],
-      validation: (Rule) => Rule.min(1).max(100),
     }),
     defineField( {
       name: 'year',

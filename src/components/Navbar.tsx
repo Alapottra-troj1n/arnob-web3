@@ -15,15 +15,15 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl py-7 mx-auto flex justify-between items-center text-mywhite">
-        <div>
-          <Image
+        <Link href={'/'}>
+        <Image
             src={"/logo.svg"}
             width={60}
             height={60}
             alt="arnob chakma"
             className="cursor-pointer"
           />
-        </div>
+        </Link>
         <div className="hidden lg:flex gap-6 items-center list-none">
           <Link className="hover:text-primary transition-colors" href={"/work"}>
             <li>WORK</li>
