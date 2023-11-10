@@ -29,23 +29,49 @@ export default defineType({
       ],
     }),
     defineField({
-        name: "subtitle",
-        title: "Subtitle",
-        type: "string",
-        validation: (Rule) => Rule.required(),
-        
-      }),
+      name: "subtitle",
+      title: "Subtitle",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
     defineField({
       name: "description",
       title: "Description",
       type: "string",
-      
     }),
     defineField({
       name: "categories",
       title: "Categories",
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],
+    }),
+    defineField({
+      name: "service",
+      title: "Service",
+      type: "array",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+      validation: (Rule) => Rule.min(1).max(100),
+    }),
+    defineField({
+      name: "industry",
+      title: "Industry",
+      type: "array",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+      validation: (Rule) => Rule.min(1).max(100),
+    }),
+    defineField( {
+      name: 'year',
+      title: 'Year',
+      type: 'number',
+      validation: (Rule) => Rule.integer().min(1900).max(2100),
     }),
     defineField({
       name: "slug",

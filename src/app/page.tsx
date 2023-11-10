@@ -10,24 +10,26 @@ import ScrollMarquee from "./_components/ScrollMarquee";
 export default async function Home() {
   const projects = await sanityClient.fetch<Project[]>({
     query: `
-  *[_type == 'project'] {
-    _id,
-    title,
-    subtitle,
-    description,
-    mainImage{
-    asset->{url}
-    },
-    categories[]->{
+    *[_type == 'project'] {
+      _id,
       title,
-    },
-    slug{
-    current
-    },
-    images[] {
+      description,
+      service,
+      industry,
+      mainImage{
       asset->{url}
+      },
+      categories[]->{
+        title,
+      },
+      slug{
+      current
+      },
+      images[] {
+        asset->{url}
+      }
     }
-  }
+  
 
 `,
     config: { cache: "no-cache" },

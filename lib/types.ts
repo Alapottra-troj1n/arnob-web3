@@ -2,6 +2,8 @@ interface Project {
   _id: string;
   title: string;
   subtitle: string;
+  service: string[],
+  industry:string[],
   description: string;
   mainImage: {
     asset: {
