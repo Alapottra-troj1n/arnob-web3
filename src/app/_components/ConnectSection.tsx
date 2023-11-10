@@ -13,17 +13,14 @@ const ConnectSection = () => {
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="flex flex-col justify-center gap-6"
         >
-          <h1 className="text-center text-4xl font-bold uppercase text-primary hidden lg:block">
-            Let's connect, see what <br /> magic we can
-            <span className="text-mywhite"> create</span> <br /> together
+          <h1 className="text-center text-6xl font-bold uppercase text-primary hidden lg:block">
+            Let's <br /> connect
           </h1>
-          <h1 className=" text-center text-2xl font-bold uppercase text-primary lg:hidden">
-            Let's connect,<br /> see what <br /> magic we can  <br />
-            <span className="text-mywhite"> create</span> <br /> together
-          </h1>
+          <p className="font-clash text-center  text-4xl text-mygray">See what magic we can <br /> create together!</p>
+         
           <a
             href="mailto:letsconnect@arnob.com"
-            className="text-lg lg:text-2xl text-mygray underline text-center font-light mt-4"
+            className="text-lg lg:text-2xl text-mygray underline text-center  mt-4 font-clash font-light"
           >
             letsconnect@arnob.com
           </a>
