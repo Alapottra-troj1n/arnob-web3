@@ -1,11 +1,12 @@
 import { MoveUpRight } from "lucide-react";
-import { headers } from 'next/headers';
+import { headers } from "next/headers";
+import Image from "next/image";
 
 const Footer = () => {
   const headersList = headers();
-  const fullUrl = headersList.get('referer') || "";
+  const fullUrl = headersList.get("referer") || "";
   return (
-    <div className={`bg-mydark ${fullUrl.includes('/studio') && 'hidden'}`}>
+    <div className={`bg-mydark ${fullUrl.includes("/studio") && "hidden"}`}>
       <div className="max-w-6xl mx-auto py-14 hidden lg:block">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
@@ -48,8 +49,14 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <button className="bg-primary text-sm px-6 py-2 rounded-full">
-              CHAT NOW!
+            <button className="bg-primary px-6 py-2 rounded-full flex gap-3 items-center">
+              <Image
+                src={"/telegram.svg"}
+                width={18}
+                height={18}
+                alt="telegram"
+              />{" "}
+              Telegram
             </button>
           </div>
         </div>
@@ -98,10 +105,10 @@ const Footer = () => {
               CHAT NOW!
             </button>
             <div>
-            <p className="text-gray-400 font-light text-xs text-right">
-              ©2023 Arnob Chakma. All rights reserved.
-            </p>
-          </div>
+              <p className="text-gray-400 font-light text-xs text-right">
+                ©2023 Arnob Chakma. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
