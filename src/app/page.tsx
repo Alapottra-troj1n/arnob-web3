@@ -4,6 +4,7 @@ import ConnectSection from "./_components/ConnectSection";
 
 import { Project } from "../../lib/types";
 import { sanityClient } from "../../sanity/lib/client";
+import Services from "./_components/Services";
 
 export default async function Home() {
   const projects = await sanityClient.fetch<Project[]>({
@@ -79,6 +80,10 @@ export default async function Home() {
 
       <div className="min-h-screen bg-mydark py-10   ">
         <Projects projects={projects} />
+      </div>
+
+      <div className="min-h-screen bg-mydark py-10   ">
+        <Services />
       </div>
 
       <div className="lg:h-screen bg-mydark  py-10">
