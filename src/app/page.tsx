@@ -38,8 +38,8 @@ export default async function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-mydark flex justify-center items-center ">
-        <div className="max-w-6xl mx-auto lg:mt-48 px-5 lg:px-0">
+      <div className="min-h-screen bg-mydark flex justify-center lg:items-center ">
+        <div className="max-w-6xl mx-auto lg:mt-48 px-5 lg:px-0 pt-28 lg:pt-0">
           <div className="relative w-[70%] mx-auto ">
             <img
               src="/star.svg"
