@@ -103,7 +103,7 @@ const Project = () => {
             initial={{ translateY: 100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="text-5xl lg:text-6xl font-black text-primary lg:px-0 break-words lg:w-[70%] uppercase hyphens-auto"
+            className="text-[45px] leading-[44px] lg:text-6xl font-black text-primary lg:px-0 break-words lg:w-[70%] uppercase hyphens-auto"
           >
             {project?.title}
           </motion.h1>
