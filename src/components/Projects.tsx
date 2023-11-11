@@ -30,9 +30,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 mt-10">
         {projects.map((project) => (
-          <Link href={`/project/${project.slug.current}`}>
+          <Link key={project._id} href={`/project/${project.slug.current}`}>
             <motion.div
-              key={project._id}
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -49,7 +48,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               <div className="flex justify-between items-center mt-5 px-2">
                 <div className="cursor-pointer">
                   <h2 className="text-xl">{project.title}</h2>
-                  <p className="font-light text-sm text-mygray">
+                  <p className="font-normal font-clash text-sm text-mygray">
                     {project.subtitle}
                   </p>
                 </div>
