@@ -57,8 +57,8 @@ const Project = () => {
 
   if (loading) {
     return (
-      <div className="lg:h-screen h-[70vh] bg-mydark flex justify-center items-center">
-        <div className="pt-24 text-mygray max-w-6xl mx-auto ">
+      <div className="min-h-screen h-full bg-mydark flex justify-center items-center">
+        <div className="lg:pt-24 text-mygray lg:max-w-6xl lg:mx-auto ">
           <h2>Loading...</h2>
         </div>
       </div>
@@ -124,16 +124,10 @@ const Project = () => {
                 src={image.asset.url}
                 width={1600}
                 height={848}
-                className="hidden lg:block"
+              
                 alt="project-img"
               />
-              <Image
-                src={image.asset.url}
-                width={342}
-                height={200}
-                className="lg:hidden object-cover"
-                alt="project-img"
-              />
+         
             </motion.div>
           )) || (
             <p className="text-center text-sm pt-36 text-gray-500">
