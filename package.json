@@ -22,7 +22,8 @@
     "react-hot-toast": "^2.4.1",
     "sanity": "^3.19.1",
     "styled-components": "^6.1.0",
-    "tailwindcss-animated": "^1.0.1"
+    "tailwindcss-animated": "^1.0.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

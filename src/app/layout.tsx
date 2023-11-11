@@ -35,34 +35,44 @@ const clash = localFont({
   variable: "--font-clash",
   src: [
     {
-      path: "../assets/fonts/ClashGrotesk-Bold.ttf",
+      path: "../assets/fonts/Aeonik-Air.otf",
+      weight: "100",
+      style: "thin",
+    },
+    {
+      path: "../assets/fonts/Aeonik-Black.otf",
+      weight: "700",
+      style: "black",
+    },
+    {
+      path: "../assets/fonts/Aeonik-Bold.otf",
       weight: "600",
       style: "bold",
     },
     {
-      path: "../assets/fonts/ClashGrotesk-Extralight.ttf",
-      weight: "100",
-      style: "extralight",
-    },
-    {
-      path: "../assets/fonts/ClashGrotesk-Light.ttf",
-      weight: "200",
+      path: "../assets/fonts/Aeonik-Light.otf",
+      weight: "300",
       style: "light",
     },
     {
-      path: "../assets/fonts/ClashGrotesk-Medium.ttf",
-      weight: "400",
+      path: "../assets/fonts/Aeonik-Medium.otf",
+      weight: "500",
       style: "medium",
     },
     {
-      path: "../assets/fonts/ClashGrotesk-Regular.ttf",
-      weight: "300",
+      path: "../assets/fonts/Aeonik-Regular.otf",
+      weight: "400",
       style: "regular",
     },
     {
-      path: "../assets/fonts/ClashGrotesk-Semibold.ttf",
+      path: "../assets/fonts/Aeonik-Medium.otf",
       weight: "500",
-      style: "semibold",
+      style: "medium",
+    },
+    {
+      path: "../assets/fonts/Aeonik-Thin.otf",
+      weight: "200",
+      style: "thin",
     },
   ],
 });

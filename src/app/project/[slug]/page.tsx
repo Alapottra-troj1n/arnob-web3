@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { v4 as uuidv4 } from 'uuid';
 
 const Project = () => {
   const { slug } = useParams();
@@ -71,7 +72,7 @@ const Project = () => {
               SERVICE
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.service?.map((service) => <p>{service}</p>) || (
+              {project?.service?.map((service) => <p key={uuidv4()} >{service}</p>) || (
                 <p className="text-xs text-gray-500">None</p>
               )}
             </div>
@@ -81,7 +82,7 @@ const Project = () => {
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.industry?.map((ind) => <p>{ind}</p>) || (
+              {project?.industry?.map((ind) => <p key={uuidv4()} >{ind}</p>) || (
                 <p className="text-xs text-gray-500">None</p>
               )}
             </div>
@@ -111,7 +112,7 @@ const Project = () => {
         <div className="mt-24 flex flex-col w-full h-full gap-y-4">
           {project?.images?.map((image) => (
             <motion.div
-              key={image.asset.url}
+              key={uuidv4()}
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}

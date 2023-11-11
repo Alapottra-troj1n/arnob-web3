@@ -14,6 +14,7 @@ export default async function Home() {
       _id,
       title,
       description,
+      subtitle,
       service,
       industry,
       mainImage{
