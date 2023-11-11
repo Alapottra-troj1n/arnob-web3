@@ -68,7 +68,7 @@ export default async function Home() {
               <span className="relative" >  <img
               src="/mic.svg"
               alt="mic"
-              className="absolute sm:right-[13rem] md:right-[13.5rem] top-[-3.3rem] lg:top-[-4.7rem] w-14 lg:w-auto lg:hidden"
+              className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden"
             />ARNOB</span> CAN DESIGN FOR YOU
             </h1>
           </div>
