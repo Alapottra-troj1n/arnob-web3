@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
+import ConnectSection from "@/app/_components/ConnectSection";
 
 const Project = () => {
   const { slug } = useParams();
@@ -53,9 +54,10 @@ const Project = () => {
     };
     getProjectData();
   }, []);
+
   if (loading) {
     return (
-      <div className="h-screen bg-mydark flex justify-center items-center">
+      <div className="lg:h-screen h-[70vh] bg-mydark flex justify-center items-center">
         <div className="pt-24 text-mygray max-w-6xl mx-auto ">
           <h2>Loading...</h2>
         </div>
@@ -64,31 +66,31 @@ const Project = () => {
   }
 
   return (
-    <div className="min-h-screen bg-mydark">
-      <div className="pt-24 text-mygray max-w-6xl mx-auto">
-        <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-3 ">
+    <div className="min-h-screen bg-mydark overflow-x-hidden">
+      <div className="lg:pt-24 text-mygray max-w-6xl mx-auto px-5 lg:px-0">
+        <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mb-11">
+            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               SERVICE
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.service?.map((service) => <p key={uuidv4()} >{service}</p>) || (
-                <p className="text-xs text-gray-500">None</p>
-              )}
+              {project?.service?.map((service) => (
+                <p key={uuidv4()}>{service}</p>
+              )) || <p className="text-xs text-gray-500">None</p>}
             </div>
           </div>
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mb-11">
+            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.industry?.map((ind) => <p key={uuidv4()} >{ind}</p>) || (
+              {project?.industry?.map((ind) => <p key={uuidv4()}>{ind}</p>) || (
                 <p className="text-xs text-gray-500">None</p>
               )}
             </div>
           </div>
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mb-11">
+            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
             <div className="space-y-2 uppercase text-mygray">
@@ -96,15 +98,16 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="pt-16">
-          <motion.h1 
-          initial={{ translateY: 100, opacity: 0 }}
-          whileInView={{ translateY: 0, opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="text-6xl font-black text-primary w-[50%] uppercase">
+        <div lang="en" className="pt-16 max-w-5xl mx-auto">
+          <motion.h1
+            initial={{ translateY: 100, opacity: 0 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="text-5xl lg:text-6xl font-black text-primary lg:px-0 break-words lg:w-[70%] uppercase hyphens-auto"
+          >
             {project?.title}
           </motion.h1>
-          <p className="w-[50%] mt-9 text-lg font-normal font-clash ">
+          <p className="lg:w-[70%] w-[80%] mt-9 text-lg font-normal font-clash leading-9">
             {project?.description}
           </p>
         </div>
@@ -121,32 +124,25 @@ const Project = () => {
                 src={image.asset.url}
                 width={1600}
                 height={848}
+                className="hidden lg:block"
+                alt="project-img"
+              />
+              <Image
+                src={image.asset.url}
+                width={342}
+                height={200}
+                className="lg:hidden object-cover"
                 alt="project-img"
               />
             </motion.div>
-          )) || <p className="text-center text-sm pt-36 text-gray-500">No Photos Found</p> }
-        </div>
-        <div className="pt-60 pb-40">
-          <motion.div
-            initial={{ translateY: 100, opacity: 0 }}
-            whileInView={{ translateY: 0, opacity: 1 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="flex flex-col justify-center gap-6"
-          >
-            <h1 className="text-center text-6xl font-bold uppercase text-primary hidden lg:block">
-              Let's <br /> connect
-            </h1>
-            <p className="font-clash text-center  text-4xl text-mygray">
-              See what magic we can <br /> create together!
+          )) || (
+            <p className="text-center text-sm pt-36 text-gray-500">
+              No Photos Found
             </p>
-
-            <a
-              href="mailto:letsconnect@arnob.com"
-              className="text-lg lg:text-2xl text-mygray underline text-center  mt-4 font-clash font-light"
-            >
-              letsconnect@arnob.com
-            </a>
-          </motion.div>
+          )}
+        </div>
+        <div className="lg:pt-60 lg:pb-40 pt-28 pb-20">
+        <ConnectSection />
         </div>
       </div>
     </div>
