@@ -21,7 +21,7 @@ const config: Config = {
         mydark: "#060A0E",
         primary: "#F74A53",
         mywhite: "#ECECF0",
-        mygray: "#CCCCCC",
+        mygray: "#CCDAE7",
         mylightgray: "#D9D9D9",
       },
       fontFamily: {

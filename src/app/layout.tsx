@@ -98,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baseNeue.variable} ${clash.variable} font-baseNeue overflow-x-hidden text-mywhite`}
+        className={`${baseNeue.variable} ${clash.variable} font-baseNeue overflow-x-hidden text-mygray`}
       >
         <Navbar />
         <Toaster />

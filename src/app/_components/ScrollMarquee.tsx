@@ -1,21 +1,65 @@
 "use client";
 
+import { useScroll, useTransform, motion } from "framer-motion";
+
 const ScrollMarquee = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [1, 0.6], [0, -400]);
+  const z = useTransform(scrollYProgress, [1, 0.6], [0, 400]);
+
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full flex justify-center items-center antialiased min-h-[20vh] lg:min-h-[45vh] overflow-hidden">
       {/* Pc */}
-      <div className="hidden lg:block rotate-6  border-y-2 border-primary pt-1 text-primary font-bold font-baseNeue absolute translate-y-5 w-full text-6xl whitespace-nowrap overflow-x-hidden">
-        30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+      <div>
+      <div className="rotate-6 translate-y-10 hidden lg:block">
+      <motion.div
+          style={{ x }}
+          transition={{ease: 'easeInOut'}}
+          className=" border-y-2 z-10 border-primary pt-1 text-primary font-bold font-baseNeue w-max text-6xl overflow-hidden  whitespace-nowrap"
+        >
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+        </motion.div>
       </div>
-      <div className="hidden lg:block -rotate-3 bg-black  border-y-2 border-white pt-1 text-white font-bold font-baseNeue absolute translate-y-5 w-full text-6xl whitespace-nowrap overflow-x-hidden">
-        30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+       <div className="-rotate-6 hidden lg:block">
+       <motion.div
+          style={{ x: z }}
+          initial={{ translateX: -1000 }}
+          transition={{ease: 'easeInOut'}}
+          className=" border-y-2 z-10 border-mygray pt-1 bg-mydark text-mygray font-bold font-baseNeue w-max text-6xl overflow-hidden whitespace-nowrap"
+        >
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+        </motion.div>
+       </div>
       </div>
-      {/* Mobile */}
-      <div className="lg:hidden rotate-6  border-y-2 border-primary pt-1 text-primary font-bold font-baseNeue absolute translate-y-5 w-full text-2xl whitespace-nowrap overflow-x-hidden">
-        30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+
+   {/* Mobile */}
+      <div>
+      <div className="rotate-6 translate-y-10 lg:hidden">
+      <motion.div
+          style={{ x }}
+          transition={{ease: 'easeInOut'}}
+          className=" border-y-2 z-10 border-primary pt-1 text-primary font-bold font-baseNeue w-max text-2xl overflow-hidden  whitespace-nowrap"
+        >
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+        </motion.div>
       </div>
-      <div className="lg:hidden -rotate-6 bg-black  border-y-2 border-white pt-1 text-white font-bold font-baseNeue absolute translate-y-5 w-full text-2xl whitespace-nowrap overflow-x-hidden">
-        30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+       <div className="-rotate-6  lg:hidden">
+       <motion.div
+          style={{ x: z }}
+          initial={{ translateX: -1000 }}
+          transition={{ease: 'easeInOut'}}
+          className=" border-y-2 z-10 border-mygray pt-1 bg-mydark text-mygray font-bold font-baseNeue w-max text-2xl overflow-hidden whitespace-nowrap"
+        >
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+        </motion.div>
+       </div>
       </div>
     </div>
   );
