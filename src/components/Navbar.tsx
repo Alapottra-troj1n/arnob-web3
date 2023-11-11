@@ -6,8 +6,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
 
-  console.log(pathname);
-
+  
   return (
     <div
       className={`bg-mydark w-full lg:fixed z-10  px-5 lg:px-0 overflow-hidden ${
