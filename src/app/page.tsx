@@ -89,7 +89,7 @@ export default async function Home() {
       <div className="min-h-screen bg-mydark py-10   ">
         <Services />
       </div>
-      <div className=" bg-mydark py-20   ">
+      <div className=" bg-mydark py-20  ">
         <ScrollMarquee />
       </div>
 
