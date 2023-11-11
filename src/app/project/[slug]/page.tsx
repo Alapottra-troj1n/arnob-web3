@@ -56,7 +56,7 @@ const Project = () => {
   if (loading) {
     return (
       <div className="h-screen bg-mydark flex justify-center items-center">
-        <div className="pt-24 text-mywhite max-w-6xl mx-auto ">
+        <div className="pt-24 text-mygray max-w-6xl mx-auto ">
           <h2>Loading...</h2>
         </div>
       </div>
@@ -65,7 +65,7 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark">
-      <div className="pt-24 text-mywhite max-w-6xl mx-auto">
+      <div className="pt-24 text-mygray max-w-6xl mx-auto">
         <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-3 ">
           <div>
             <h2 className="font-clash font-bold text-xl text-mygray mb-11">

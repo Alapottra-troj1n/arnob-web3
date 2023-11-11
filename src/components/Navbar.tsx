@@ -14,7 +14,7 @@ const Navbar = () => {
         pathname.includes("/studio") && "hidden z-0"
       }`}
     >
-      <div className="max-w-6xl py-7 mx-auto flex justify-between items-center text-mywhite">
+      <div className="max-w-6xl py-7 mx-auto flex justify-between items-center text-mygray">
         <Link href={'/'}>
         <Image
             src={"/logo.svg"}
