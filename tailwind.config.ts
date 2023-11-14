@@ -20,7 +20,7 @@ const config: Config = {
       colors: {
         mydark: "#060A0E",
         primary: "#F74A53",
-        mywhite: "#ECECF0",
+        mywhite: "#E8F1F8",
         mygray: "#CCDAE7",
         mylightgray: "#D9D9D9",
       },
