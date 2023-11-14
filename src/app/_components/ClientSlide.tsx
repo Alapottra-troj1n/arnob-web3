@@ -10,7 +10,7 @@ const ClientSlide = () => {
           gradient={true}
           gradientColor="#060A0E"
           autoFill
-          gradientWidth={500}
+          gradientWidth={200}
           direction="left"
         >
           <div className="flex gap-16 items-center flex-wrap">
@@ -59,7 +59,7 @@ const ClientSlide = () => {
           gradient={true}
           gradientColor="#060A0E"
           autoFill
-          gradientWidth={500}
+          gradientWidth={200}
           direction="right"
         >
           <div className="flex gap-16 items-center flex-wrap">

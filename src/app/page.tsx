@@ -39,19 +39,19 @@ export default async function Home() {
   return (
     <>
       <div className="min-h-screen bg-mydark flex justify-center lg:items-center ">
-        <div className="max-w-6xl mx-auto lg:mt-48 px-5 lg:px-0 pt-20 lg:pt-0">
-       <div className="flex justify-center ml-8">
-       <img
+        <div className="max-w-[1128px] mx-auto lg:mt-[167px] px-5 lg:px-0 pt-20 lg:pt-0">
+          <div className="flex justify-center ml-8">
+            <img
               src="/digital-artist.svg"
               alt="digital architect"
               className=" lg:hidden mb-4"
             />
-       </div>
+          </div>
           <div className="relative w-[70%] mx-auto ">
             <img
               src="/star.svg"
               alt="star"
-              className="w-[2.4rem] h-[2.4rem] absolute right-[18.3rem] bottom-[5.6rem] animate-spin-slow ease-in-out hidden lg:block"
+              className="w-[2.4rem] h-[2.4rem] absolute right-[17.9rem] bottom-[5.6rem] animate-spin-slow ease-in-out hidden lg:block"
             />
 
             <img
@@ -64,22 +64,27 @@ export default async function Home() {
               alt="digital architect"
               className="hidden lg:block absolute right-[2.5rem] top-[-3.5rem]"
             />
-            <h1 className="text-center text-5xl lg:text-7xl text-primary font-baseNeue font-bold tracking-wide  ">
-              <span className="relative" >  <img
-              src="/mic.svg"
-              alt="mic"
-              className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden"
-            />ARNOB</span> CAN DESIGN FOR YOU
+            <h1 className="text-center text-5xl lg:text-7xl text-primary font-baseNeue font-black tracking-wide  ">
+              <span className="relative">
+                {" "}
+                <img
+                  src="/mic.svg"
+                  alt="mic"
+                  className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden"
+                />
+                ARNOB
+              </span>{" "}
+              CAN DESIGN FOR YOU
             </h1>
           </div>
-          <div className="mt-10 lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
-            <p className="text-mygray uppercase text-center text-xl lg:text-3xl tracking-wide ">
+          <div className="mt-[68px] lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
+            <p className="text-mygray uppercase text-center text-xl lg:text-[32px] leading-9 tracking-wide ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
               STRATEGY.
             </p>
           </div>
-          <div className="flex justify-center items-center my-8">
+          <div className="flex justify-center items-center">
             <img
               src="/star.svg"
               alt="star"
@@ -87,13 +92,13 @@ export default async function Home() {
             />
           </div>
 
-          <div className=" bg-mydark pb-14  lg:pt-[148px] lg:pb-[241px]">
+          <div className=" bg-mydark  lg:pt-[148px]">
             <ClientSlide />
           </div>
         </div>
       </div>
 
-      <div className="min-h-screen bg-mydark py-10   ">
+      <div className="pt-[241px] bg-mydark  ">
         <Projects projects={projects} />
       </div>
 
