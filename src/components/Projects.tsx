@@ -10,10 +10,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     <div className="flex justify-center flex-col max-w-[1128px] mx-auto px-5 lg:px-0">
       <div className="flex lg:gap-5 gap-3 items-center justify-center">
         <div className="flex lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-clash text-[16px] font-medium">
-          <button className=" hover:text-primary transition-all">
-            ALL
-          </button>{" "}
-          /{" "}
+          <button className=" hover:text-primary transition-all">ALL</button> /{" "}
           <button className=" text-primary underline transition-all">
             WEB3.0 PROJECTS
           </button>{" "}
@@ -55,7 +52,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                 <div className="border-[0.5px] w-[89px] h-[60px] rounded-[30px] text-mygray border-mygray cursor-pointer group flex justify-center items-center">
                   <svg
                     width="22"
-                   
                     height="16"
                     viewBox="0 0 22 16"
                     fill="none"
@@ -64,7 +60,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                     <path
                       d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
                       fill="#CCCCCC"
-                     
                     />
                   </svg>
                 </div>
@@ -74,11 +69,22 @@ const Projects = ({ projects }: { projects: Project[] }) => {
         ))}
       </div>
 
-      <div className="mt-20 flex gap-3 items-center justify-center group">
-        <h2 className="text-center cursor-pointer hover:text-primary transition-all text-sm">
+      <div className="mt-[86px] flex gap-3 items-center justify-center group">
+        <h2 className="text-center font-medium font-clash text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
         </h2>
-        <ArrowRight className="h-6 w-6 group-hover:text-primary group-hover:translate-x-2  transition-all" />
+        <svg
+          width="22"
+          height="16"
+          viewBox="0 0 22 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
+            fill="#CCCCCC"
+          />
+        </svg>
       </div>
     </div>
   );
