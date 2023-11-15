@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const ConnectSection = () => {
   return (
-    <div className="py-14 lg:h-full flex justify-center items-center flex-col lg:px-0 px-5">
-      <div className="max-w-6xl mx-auto">
+    <div className="lg:h-full flex justify-center items-center flex-col lg:px-0 px-5">
+      <div className=" max-w-[1128px] mx-auto">
         <motion.div
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}

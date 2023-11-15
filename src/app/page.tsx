@@ -102,14 +102,14 @@ export default async function Home() {
         <Projects projects={projects} />
       </div>
 
-      <div className="min-h-screen bg-mydark py-10   ">
+      <div className="min-h-screen bg-mydark pt-[278px]   ">
         <Services />
       </div>
-      <div className=" bg-mydark   ">
+      <div className=" bg-mydark pt-[60px]   ">
         <ScrollMarquee />
       </div>
 
-      <div className="lg:h-screen bg-mydark  py-10">
+      <div className=" bg-mydark pt-[159px] pb-[235px] ">
         <ConnectSection />
       </div>
     </>
