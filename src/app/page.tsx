@@ -70,7 +70,7 @@ export default async function Home() {
                 <img
                   src="/mic.svg"
                   alt="mic"
-                  className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden"
+                  className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden leading-[14px]"
                 />
                 ARNOB
               </span>{" "}
