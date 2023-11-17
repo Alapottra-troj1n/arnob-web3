@@ -18,7 +18,7 @@ const Footer = () => {
               ©2023 Arnob Chakma. All rights reserved.
             </p>
           </div>
-          <div className="uppercase flex flex-wrap gap-4 text-sm">
+          <div className="uppercase flex flex-wrap gap-4 text-[17px] font-medium font-aeonik">
             <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
               Behance
               <Image
@@ -73,7 +73,7 @@ const Footer = () => {
       {/* mobile */}
       <div className="max-w-6xl mx-auto py-4 lg:hidden px-5">
         <div className="grid grid-cols-2">
-          <div className="uppercase grid grid-cols-1 gap-5 text-sm">
+          <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[17px] font-medium">
             <div className="flex items-center gap-3 group cursor-pointer hover:text-primary ">
               Behance
               <Image

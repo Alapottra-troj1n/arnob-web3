@@ -98,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baseNeue.variable} ${aeonik.variable} font-baseNeue overflow-x-hidden text-mygray`}
+        className={`${baseNeue.variable} ${aeonik.variable} font-baseNeue overflow-x-hidden text-mygray bg-mydark`}
       >
         <Navbar />
         <Toaster />
