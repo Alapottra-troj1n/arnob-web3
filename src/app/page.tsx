@@ -39,7 +39,7 @@ export default async function Home() {
   return (
     <>
       <div className="min-h-screen bg-mydark flex justify-center lg:items-center ">
-        <div className="max-w-[1128px] mx-auto lg:mt-[167px] px-5 lg:px-0 pt-20 lg:pt-0">
+        <div className="max-w-[1324px] mx-auto lg:mt-[167px] px-5 lg:px-0 pt-20 lg:pt-0">
           <div className="flex justify-center ml-8">
             <img
               src="/digital-artist.svg"
