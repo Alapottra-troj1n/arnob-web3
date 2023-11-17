@@ -78,7 +78,7 @@ export default async function Home() {
             </h1>
           </div>
           <div className="mt-[68px] lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
-            <p className="text-mygray uppercase text-center text-xl lg:text-[32px] leading-[34px] tracking-wide ">
+            <p className="text-mygray uppercase text-center text-xl lg:text-[32px] leading-[34px] tracking-wide font-normal  ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
               STRATEGY.

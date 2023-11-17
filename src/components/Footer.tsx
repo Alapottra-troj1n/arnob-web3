@@ -57,11 +57,11 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <button className="bg-primary px-6 py-2 rounded-full flex gap-3 items-center text-[#E8F1F8]">
+            <button className="bg-primary w-[134px] h-[48px] rounded-full font-aeonik font-medium flex gap-2 items-center justify-center text-[#E8F1F8]">
               <Image
                 src={"/telegram.svg"}
-                width={18}
-                height={18}
+                width={20}
+                height={17}
                 alt="telegram"
               />{" "}
               Telegram
@@ -114,11 +114,11 @@ const Footer = () => {
 
           <div className="flex flex-col justify-between items-center gap-10">
             <div className="flex justify-center w-full">
-              <button className="bg-primary px-6 py-2 rounded-full flex gap-3 items-center text-[#E8F1F8]">
+              <button className="bg-primary w-[134px] h-[48px] rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
                 <Image
                   src={"/telegram.svg"}
-                  width={18}
-                  height={18}
+                  width={20}
+                  height={17}
                   alt="telegram"
                 />{" "}
                 Telegram
