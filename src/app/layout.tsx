@@ -31,8 +31,8 @@ const baseNeue = localFont({
   ],
 });
 
-const clash = localFont({
-  variable: "--font-clash",
+const aeonik = localFont({
+  variable: "--font-aeonik",
   src: [
     {
       path: "../assets/fonts/Aeonik-Air.otf",
@@ -98,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baseNeue.variable} ${clash.variable} font-baseNeue overflow-x-hidden text-mygray`}
+        className={`${baseNeue.variable} ${aeonik.variable} font-baseNeue overflow-x-hidden text-mygray`}
       >
         <Navbar />
         <Toaster />

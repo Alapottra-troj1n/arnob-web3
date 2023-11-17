@@ -19,7 +19,7 @@ const Services = () => {
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="lg:text-[32px] leading-9 font-clash font-regular text-center mt-[44px] lg:hidden"
+          className="lg:text-[32px] leading-9 font-aeonik font-regular text-center mt-[44px] lg:hidden"
         >
           Solving Problems Through <br /> Product Focused Design.
         </motion.p>
@@ -27,7 +27,7 @@ const Services = () => {
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="lg:text-[32px] leading-9 font-clash font-regular text-center mt-[44px]  hidden lg:block"
+          className="lg:text-[32px] leading-9 font-aeonik font-regular text-center mt-[44px]  hidden lg:block"
         >
           Solving Problems Through Product <br /> Focused Design.
         </motion.p>
@@ -46,7 +46,7 @@ const Services = () => {
                 WHAT CAN I DO FOR YOU
               </h3>
             </div>
-            <div className="mt-6 text-mygray font-clash font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-mygray font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
                 <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/> Logo Design
               </li>
@@ -81,7 +81,7 @@ const Services = () => {
                 APPLICATIONS I’M FLUENT IN
               </h3>
             </div>
-            <div className="mt-6 text-mygray font-clash font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-mygray font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
               <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/> Photoshop
               </li>
@@ -107,7 +107,7 @@ const Services = () => {
                 WHAT YOU CAN EXPECT
               </h3>
             </div>
-            <div className="mt-6 text-mygray font-clash font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-mygray font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
               <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/>Clean & Funtional
               </li>

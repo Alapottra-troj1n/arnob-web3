@@ -26,7 +26,7 @@ const config: Config = {
       },
       fontFamily: {
         baseNeue: ["var(--font-base-neue)"],
-        clash: ["var(--font-clash)"],
+        aeonik: ["var(--font-aeonik)"],
       },
     },
   },

@@ -47,11 +47,11 @@ export default async function Home() {
               className=" lg:hidden mb-4"
             />
           </div>
-          <div className="relative w-[70%] mx-auto ">
+          <div className="relative w-[80%] mx-auto ">
             <img
               src="/star.svg"
               alt="star"
-              className="w-[2.4rem] h-[2.4rem] absolute right-[17.9rem] bottom-[5.6rem] animate-spin-slow ease-in-out hidden lg:block"
+              className="w-[45px] h-[45px] absolute right-[19.8rem] bottom-[6.5rem] animate-spin-slow ease-in-out hidden lg:block"
             />
 
             <img
@@ -64,7 +64,7 @@ export default async function Home() {
               alt="digital architect"
               className="hidden lg:block absolute right-[2.5rem] top-[-3.5rem]"
             />
-            <h1 className="text-center text-5xl lg:text-7xl text-primary font-baseNeue font-black tracking-wide  ">
+            <h1 className="text-center text-5xl lg:text-[90px] text-primary font-baseNeue font-black tracking-wide  ">
               <span className="relative">
                 {" "}
                 <img

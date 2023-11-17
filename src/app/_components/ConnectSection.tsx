@@ -18,13 +18,13 @@ const ConnectSection = () => {
           <h1 className="text-center text-[30px] font-extrabold leading-7 uppercase text-primary lg:hidden ">
             Let's <br /> connect
           </h1>
-          <p className="font-clash text-center mt-[44px]  text-[20px] lg:text-[38px] text-mygray leading-5 lg:leading-9">
+          <p className="font-aeonik text-center mt-[44px]  text-[20px] lg:text-[38px] text-mygray leading-5 lg:leading-9">
             See What Magic We Can <br /> Create Together!
           </p>
 
           <a
             href="mailto:letsconnect@arnob.com"
-            className="text-[18px] lg:text-[30px] text-mygray underline  underline-offset-8 decoration-2 text-center  mt-[74px] font-clash font-light"
+            className="text-[18px] lg:text-[30px] text-mygray underline  underline-offset-8 decoration-2 text-center  mt-[74px] font-aeonik font-light"
           >
             letsconnect@arnob.com
           </a>
