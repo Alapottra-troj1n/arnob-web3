@@ -75,7 +75,7 @@ const Project = () => {
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.service?.map((service) => (
-                <p key={uuidv4()}>{service}</p>
+                <p className="text-[15px] font-aeonik  font-normal text-gray-500" key={uuidv4()}>{service}</p>
               )) || <p className="text-[15px] font-normal text-gray-500">None</p>}
             </div>
           </div>
@@ -84,8 +84,8 @@ const Project = () => {
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.industry?.map((ind) => <p key={uuidv4()}>{ind}</p>) || (
-                <p className="text-[15px] font-normal text-gray-500">None</p>
+              {project?.industry?.map((ind) => <p className="text-[15px] font-aeonik  font-normal text-gray-500" key={uuidv4()}>{ind}</p>) || (
+                <p className="text-[15px] font-aeonik  font-normal text-gray-500">None</p>
               )}
             </div>
           </div>
@@ -93,7 +93,7 @@ const Project = () => {
             <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
-            <div className="space-y-2 uppercase text-mygray">
+            <div className="space-y-2 uppercase text-mygray text-[15px] font-aeonik  font-normal ">
               {project?.year || <p className="text-[15px] font-normal text-gray-500">None</p>}
             </div>
           </div>
