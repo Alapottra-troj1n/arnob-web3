@@ -42,10 +42,10 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   className="object-cover hover:scale-100 scale-105   transition-all duration-500"
                 />
               </div>
-              <div className="flex justify-between items-center mt-[29px] px-2 font-clash text-mygray">
+              <div className="flex justify-between items-center mt-[29px] px-2 font-aeonik text-mygray">
                 <div className="cursor-pointer">
                   <h2 className="text-[22px] font-medium">{project.title}</h2>
-                  <p className="font-normal text-[17px] text-[#717F8E] font-aeonik ">
+                  <p className="font-normal text-[17px] text-[#717F8E]  ">
                     {project.subtitle}
                   </p>
                 </div>

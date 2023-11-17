@@ -26,7 +26,7 @@ const baseNeue = localFont({
     {
       path: "../assets/fonts/BaseNeueTrial-WideMedium.otf",
       weight: "400",
-      style: "wide",
+      style: "normal",
     },
   ],
 });

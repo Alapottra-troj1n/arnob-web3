@@ -17,8 +17,8 @@ const Navbar = () => {
         <Link href={'/'}>
         <Image
             src={"/logo.svg"}
-            width={60}
-            height={60}
+            width={82}
+            height={49}
             alt="arnob chakma"
             className="cursor-pointer"
           />
