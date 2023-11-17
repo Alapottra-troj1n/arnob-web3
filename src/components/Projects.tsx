@@ -8,8 +8,8 @@ import Link from "next/link";
 const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="flex justify-center flex-col max-w-[1128px] mx-auto px-5 lg:px-0">
-      <div className="flex lg:gap-5 gap-3 items-center justify-center">
-        <div className="flex lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-medium">
+      <div className="flex sticky lg:gap-5 gap-3 items-center justify-center">
+        <div className="flex  lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-medium">
           <button className=" hover:text-primary transition-all">ALL</button> /{" "}
           <button className=" text-primary underline transition-all">
             WEB3.0 PROJECTS
@@ -70,7 +70,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       </div>
 
       <div className="mt-[86px] flex gap-3 items-center justify-center group">
-        <h2 className="text-center font-medium font-clash text-[17px] cursor-pointer hover:text-primary transition-all ">
+        <h2 className="text-center font-medium font-aeonik text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
         </h2>
         <svg
