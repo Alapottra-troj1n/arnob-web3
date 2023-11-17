@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="flex justify-center items-center flex-col  max-w-[1128px] mx-auto px-5 lg:px-0 ">
-      <div className="max-w-[1128px] mx-auto lg:px-0 px-5">
+    <div className="flex justify-center items-center flex-col  max-w-[1324px] mx-auto px-5 lg:px-0 ">
+      <div className="max-w-[1324px] mx-auto lg:px-0 px-5">
         <motion.h2
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
