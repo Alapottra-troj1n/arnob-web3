@@ -51,7 +51,7 @@ export default async function Home() {
             <img
               src="/star.svg"
               alt="star"
-              className="w-[45px] h-[45px] absolute right-[19.8rem] bottom-[6.5rem] animate-spin-slow ease-in-out hidden lg:block"
+              className="w-[45px] h-[45px] absolute right-[19.8rem] bottom-[5.5rem] animate-spin-slow ease-in-out hidden lg:block"
             />
 
             <img
@@ -64,13 +64,13 @@ export default async function Home() {
               alt="digital architect"
               className="hidden lg:block absolute right-[2.5rem] top-[-3.5rem]"
             />
-            <h1 className="text-center text-5xl lg:text-[90px] text-primary font-baseNeue font-black tracking-wide  ">
+            <h1 className="text-center text-5xl lg:text-[90px] text-primary font-baseNeue font-black tracking-wide  leading-[80px]  ">
               <span className="relative">
                 {" "}
                 <img
                   src="/mic.svg"
                   alt="mic"
-                  className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden leading-[14px]"
+                  className="absolute right-[12.3rem] top-[-3rem]  w-14 lg:w-auto lg:hidden"
                 />
                 ARNOB
               </span>{" "}
@@ -78,7 +78,7 @@ export default async function Home() {
             </h1>
           </div>
           <div className="mt-[68px] lg:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
-            <p className="text-mygray uppercase text-center text-xl lg:text-[32px] leading-9 tracking-wide ">
+            <p className="text-mygray uppercase text-center text-xl lg:text-[32px] leading-[34px] tracking-wide ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
               STRATEGY.
