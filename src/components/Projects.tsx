@@ -9,7 +9,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="flex justify-center flex-col max-w-[1128px] mx-auto px-5 lg:px-0">
       <div className="flex lg:gap-5 gap-3 items-center justify-center">
-        <div className="flex lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-medium">
+        <div className="flex lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-clash text-[16px] font-medium">
           <button className=" hover:text-primary transition-all">ALL</button> /{" "}
           <button className=" text-primary underline transition-all">
             WEB3.0 PROJECTS
@@ -34,7 +34,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="cursor-pointer"
             >
-              <div className="relative h-[481px] w-[646px] overflow-hidden rounded-[32px]   ">
+              <div className="relative h-[481px] overflow-hidden rounded-[32px]  w-full ">
                 <Image
                   src={project.mainImage.asset.url}
                   fill
@@ -42,7 +42,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   className="object-cover hover:scale-100 scale-105   transition-all duration-500"
                 />
               </div>
-              <div className="flex justify-between items-center mt-5 px-2 font-aeonik text-mygray">
+              <div className="flex justify-between items-center mt-5 px-2 font-clash text-mygray">
                 <div className="cursor-pointer">
                   <h2 className="text-[22px] font-medium">{project.title}</h2>
                   <p className="font-normal text-[17px] text-[#717F8E] ">
@@ -70,7 +70,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       </div>
 
       <div className="mt-[86px] flex gap-3 items-center justify-center group">
-        <h2 className="text-center font-medium font-aeonik text-[17px] cursor-pointer hover:text-primary transition-all ">
+        <h2 className="text-center font-medium font-clash text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
         </h2>
         <svg
