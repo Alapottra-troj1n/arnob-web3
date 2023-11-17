@@ -67,34 +67,34 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
-      <div className="lg:pt-24 text-mygray max-w-6xl mx-auto px-5 lg:px-0">
+      <div className="lg:pt-24 text-mygray max-w-[1128px] mx-auto px-5 lg:px-0">
         <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
-            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               SERVICE
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.service?.map((service) => (
                 <p key={uuidv4()}>{service}</p>
-              )) || <p className="text-xs text-gray-500">None</p>}
+              )) || <p className="text-[15px] font-normal text-gray-500">None</p>}
             </div>
           </div>
           <div>
-            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.industry?.map((ind) => <p key={uuidv4()}>{ind}</p>) || (
-                <p className="text-xs text-gray-500">None</p>
+                <p className="text-[15px] font-normal text-gray-500">None</p>
               )}
             </div>
           </div>
           <div>
-            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.year || <p className="text-xs text-gray-500">None</p>}
+              {project?.year || <p className="text-[15px] font-normal text-gray-500">None</p>}
             </div>
           </div>
         </div>
@@ -103,11 +103,11 @@ const Project = () => {
             initial={{ translateY: 100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="text-[45px] leading-[44px] lg:text-6xl font-black text-primary lg:px-0 break-words lg:w-[70%] uppercase hyphens-auto"
+            className="text-[45px] leading-[44px] lg:text-6xl font-normal font-aeonik text-primary lg:px-0 break-words lg:w-[70%] uppercase hyphens-auto"
           >
             {project?.title}
           </motion.h1>
-          <p className="lg:w-[70%] w-[80%] mt-9 text-lg font-normal font-aeonik leading-9">
+          <p className="lg:w-[70%] w-[80%] mt-9 text-[18px] leading-[29px] font-normal font-aeonik ">
             {project?.description}
           </p>
         </div>
