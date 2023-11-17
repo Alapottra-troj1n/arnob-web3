@@ -70,7 +70,7 @@ const Project = () => {
       <div className="lg:pt-24 text-mygray max-w-6xl mx-auto px-5 lg:px-0">
         <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               SERVICE
             </h2>
             <div className="space-y-2 uppercase text-mygray">
@@ -80,7 +80,7 @@ const Project = () => {
             </div>
           </div>
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
@@ -90,7 +90,7 @@ const Project = () => {
             </div>
           </div>
           <div>
-            <h2 className="font-clash font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-bold text-xl text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
             <div className="space-y-2 uppercase text-mygray">
@@ -107,7 +107,7 @@ const Project = () => {
           >
             {project?.title}
           </motion.h1>
-          <p className="lg:w-[70%] w-[80%] mt-9 text-lg font-normal font-clash leading-9">
+          <p className="lg:w-[70%] w-[80%] mt-9 text-lg font-normal font-aeonik leading-9">
             {project?.description}
           </p>
         </div>

@@ -9,7 +9,7 @@ const Navbar = () => {
   
   return (
     <div
-      className={`bg-mydark w-full  z-10   px-5 lg:px-0 overflow-hidden font-clash font-medium ${
+      className={`bg-mydark w-full  z-10   px-5 lg:px-0 overflow-hidden font-aeonik font-medium ${
         pathname.includes("/studio") && "hidden z-0"
       }`}
     >

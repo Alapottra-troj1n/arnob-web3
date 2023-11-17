@@ -14,7 +14,7 @@ const Footer = () => {
       <div className=" max-w-[1128px] mx-auto  hidden lg:block">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
-            <p className="text-[#717F8E] text-[15px]  font-clash">
+            <p className="text-[#717F8E] text-[15px]  font-aeonik">
               ©2023 Arnob Chakma. All rights reserved.
             </p>
           </div>
