@@ -24,7 +24,7 @@ const ConnectSection = () => {
 
           <a
             href="mailto:letsconnect@arnob.com"
-            className="text-[18px] lg:text-[30px] text-mygray underline  underline-offset-8 decoration-2 text-center  mt-[74px] font-aeonik font-extralight"
+            className="text-[18px] lg:text-[30px] text-mygray underline  underline-offset-8 decoration-1 text-center  mt-[74px] font-aeonik font-extralight"
           >
             letsconnect@arnob.com
           </a>
