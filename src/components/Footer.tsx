@@ -14,11 +14,11 @@ const Footer = () => {
       <div className=" max-w-[1324px] mx-auto  hidden lg:block">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
-            <p className="text-[#717F8E] text-[15px]  font-aeonik">
+            <p className="text-[#717F8E] text-[15px]  font-extralight font-aeonik">
               ©2023 Arnob Chakma. All rights reserved.
             </p>
           </div>
-          <div className="uppercase flex flex-wrap gap-4 text-[17px] font-medium font-aeonik">
+          <div className="uppercase flex flex-wrap gap-4 text-[17px] font-normal font-aeonik">
             <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
               Behance
               <Image
@@ -73,7 +73,7 @@ const Footer = () => {
       {/* mobile */}
       <div className="max-w-6xl mx-auto py-4 lg:hidden px-5">
         <div className="grid grid-cols-2">
-          <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[17px] font-medium">
+          <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[17px] font-normal">
             <div className="flex items-center gap-3 group cursor-pointer hover:text-primary ">
               Behance
               <Image
@@ -125,7 +125,7 @@ const Footer = () => {
               </button>
             </div>
             <div>
-              <p className="text-gray-400 font-light text-xs text-right">
+              <p className="text-gray-400 font-extralight text-xs text-right">
                 ©2023 Arnob Chakma. All rights reserved.
               </p>
             </div>
