@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="uppercase flex flex-wrap gap-4 text-[17px] font-normal font-aeonik">
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
               Behance
               <Image
                 src={"/footer-arrow.svg"}
@@ -28,7 +28,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
               Twitter
               <Image
                 src={"/footer-arrow.svg"}
@@ -37,7 +37,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
               Linkedin
               <Image
                 src={"/footer-arrow.svg"}
@@ -46,7 +46,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
               Dribble
               <Image
                 src={"/footer-arrow.svg"}
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <button className="bg-primary w-[134px] h-[48px] rounded-full font-aeonik font-medium flex gap-2 items-center justify-center text-[#E8F1F8]">
+            <button className="bg-primary w-[134px] h-[48px] rounded-full font-aeonik font-normal flex gap-2 items-center justify-center text-[#E8F1F8]">
               <Image
                 src={"/telegram.svg"}
                 width={20}
@@ -83,7 +83,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text- ">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text- ">
               Twitter
               <Image
                 src={"/footer-arrow.svg"}
@@ -92,7 +92,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary ">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary ">
               Linkedin
               <Image
                 src={"/footer-arrow.svg"}
@@ -101,7 +101,7 @@ const Footer = () => {
                 height={12}
               />
             </div>
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary ">
+            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary ">
               Dribble
               <Image
                 src={"/footer-arrow.svg"}
@@ -114,7 +114,7 @@ const Footer = () => {
 
           <div className="flex flex-col justify-between items-center gap-10">
             <div className="flex justify-center w-full">
-              <button className="bg-primary w-[134px] h-[48px] rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
+              <button className="bg-primary w-[134px] h-[48px] rounded-full font-normal flex gap-2 items-center justify-center text-[#E8F1F8]">
                 <Image
                   src={"/telegram.svg"}
                   width={20}
