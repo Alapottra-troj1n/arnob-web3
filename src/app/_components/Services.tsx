@@ -27,7 +27,7 @@ const Services = () => {
           initial={{ translateY: 100, opacity: 0 }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="lg:text-[32px] leading-9 font-aeonik font-regular text-center mt-[44px]  hidden lg:block"
+          className="lg:text-[32px] leading-9 font-aeonik font-light text-center mt-[44px]  hidden lg:block"
         >
           Solving Problems Through Product <br /> Focused Design.
         </motion.p>
