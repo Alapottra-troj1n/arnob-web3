@@ -44,8 +44,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               </div>
               <div className="flex justify-between items-center mt-[29px] px-2 font-aeonik text-mygray">
                 <div className="cursor-pointer">
-                  <h2 className="text-[22px] font-medium">{project.title}</h2>
-                  <p className="font-normal text-[17px] text-[#717F8E]  ">
+                  <h2 className="text-[22px] font-normal">{project.title}</h2>
+                  <p className="font-light text-[17px] text-[#717F8E]  ">
                     {project.subtitle}
                   </p>
                 </div>
