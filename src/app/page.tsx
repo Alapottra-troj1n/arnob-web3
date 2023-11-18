@@ -51,22 +51,22 @@ export default async function Home() {
             <img
               src="/star.svg"
               alt="star"
-              className="w-[45px] h-[45px] absolute right-[19.8rem] bottom-[5.5rem] animate-spin-slow ease-in-out hidden lg:block"
+              className="w-[45px] h-[45px] absolute right-[24.8rem] bottom-[5.5rem] animate-spin-slow   hidden lg:block"
             />
 
             <img
               src="/mic.svg"
               alt="mic"
-              className="absolute sm:right-[13rem] md:right-[13.5rem] top-[-3.3rem] lg:top-[-4.7rem] w-14 lg:w-auto hidden lg:block"
+              className="absolute sm:right-[13rem] md:right-[19.5rem] top-[-3.3rem] lg:top-[-5.2rem] w-14 lg:w-auto hidden lg:block"
             />
             <img
               src="/digital-artist.svg"
               alt="digital architect"
-              className="hidden lg:block absolute right-[2.5rem] top-[-3.5rem]"
+              className="hidden lg:block absolute right-[8.5rem] top-[-4rem]"
             />
-            <h1 className="text-center text-5xl lg:text-[90px] text-primary font-baseNeue font-black tracking-wide  leading-[80px]  ">
+            <h1 className="text-center text-5xl lg:text-[90px] text-primary font-baseNeue font-black  leading-[80px]  ">
               <span className="relative">
-                {" "}
+       
                 <img
                   src="/mic.svg"
                   alt="mic"
@@ -88,7 +88,7 @@ export default async function Home() {
             <img
               src="/star.svg"
               alt="star"
-              className=" animate-spin-slow ease-in-out  lg:hidden"
+              className=" animate-spin-slow ease-linear  lg:hidden"
             />
           </div>
 
