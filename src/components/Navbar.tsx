@@ -46,7 +46,7 @@ const Navbar = () => {
           >
             <li>CONTACT</li>
           </Link>
-          <button className="bg-primary w-[134px] h-[48px] rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
+          <button className="bg-primary w-[134px] h-[48px] font-normal rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
           
             <Image
               src={"/telegram.svg"}
