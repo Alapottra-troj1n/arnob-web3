@@ -70,7 +70,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       </div>
 
       <div className="mt-[86px] flex gap-3 items-center justify-center group">
-        <h2 className="text-center font-medium font-aeonik text-[17px] cursor-pointer hover:text-primary transition-all ">
+        <h2 className="text-center font-normal font-aeonik text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
         </h2>
         <svg
