@@ -41,12 +41,12 @@ const Services = () => {
             <div className="border-2 border-primary rounded-[44px] h-[42px] w-[225px] flex gap-2 items-center justify-center">
             
               <Image src='/star-2.svg' alt="star" width={18} height={18} />
-              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-medium">
+              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-normal">
                 {" "}
                 WHAT CAN I DO FOR YOU
               </h3>
             </div>
-            <div className="mt-6 text-[#A7B5C4] font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-[#A7B5C4] font-aeonik font-normal text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
                 <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/> Logo Design
               </li>
@@ -77,11 +77,11 @@ const Services = () => {
           >
             <div className="border-2 border-primary rounded-[44px] h-[42px] w-[250px] flex gap-2 items-center justify-center">
             <Image src='/star-2.svg' alt="star" width={18} height={18} />
-              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-medium">
+              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-normal">
                 APPLICATIONS I’M FLUENT IN
               </h3>
             </div>
-            <div className="mt-6 text-[#A7B5C4] font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-[#A7B5C4] font-aeonik font-normal text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
               <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/> Photoshop
               </li>
@@ -103,11 +103,11 @@ const Services = () => {
           >
             <div className="border-2 border-primary rounded-[44px] h-[42px] w-[225px] flex gap-2 items-center justify-center">
             <Image src='/star-2.svg' alt="star" width={18} height={18} />
-              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-medium">
+              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-normal">
                 WHAT YOU CAN EXPECT
               </h3>
             </div>
-            <div className="mt-6 text-[#A7B5C4] font-aeonik font-medium text-[20px] lg:text-xl space-y-3">
+            <div className="mt-6 text-[#A7B5C4] font-aeonik font-normal text-[20px] lg:text-xl space-y-3">
               <li className="list-none flex gap-3 items-center">
               <Image src={'/arrow-2.svg'} alt="star" width={12} height={12}/>Clean & Funtional
               </li>
