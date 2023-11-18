@@ -9,7 +9,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="flex justify-center flex-col max-w-[1324px] mx-auto px-5 lg:px-0">
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
-        <div className="flex  lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-medium">
+        <div className="flex  lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-normal">
           <button className=" hover:text-primary transition-all">ALL</button> /{" "}
           <button className=" text-primary underline transition-all">
             WEB3.0 PROJECTS
