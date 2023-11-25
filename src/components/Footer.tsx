@@ -112,9 +112,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-between items-center gap-10">
-            <div className="flex justify-center w-full">
-              <button className="bg-primary w-[134px] h-[48px] rounded-full font-normal flex gap-2 items-center justify-center text-[#E8F1F8]">
+          <div className="flex flex-col justify-between items-center md:items-end gap-10">
+            <div className="flex justify-center md:justify-end w-full">
+              <button className="bg-primary w-[134px] h-[48px] rounded-full font-normal flex gap-2 items-center justify-center  text-[#E8F1F8]">
                 <Image
                   src={"/telegram.svg"}
                   width={20}
