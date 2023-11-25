@@ -32,7 +32,7 @@ const Services = () => {
           Solving Problems Through Product <br /> Focused Design.
         </motion.p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 mt-[64px] md:mt-[104px] gap-10 lg:gap-[178px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-[64px] md:mt-[104px] gap-10 lg:gap-[178px]">
           <motion.div
             initial={{ translateY: 100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
@@ -75,9 +75,9 @@ const Services = () => {
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
-            <div className="border-2 border-primary rounded-[44px] h-[42px] w-[250px] flex gap-2 items-center justify-center">
+            <div className="border-2 border-primary rounded-[44px] h-[42px] w-[250px] mx-auto flex gap-2 items-center justify-center">
             <Image src='/star-2.svg' alt="star" width={18} height={18} />
-              <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-normal">
+              <h3 className="text-[13px] lg:text-xs text-primary  font-baseNeue font-normal">
                 APPLICATIONS I’M FLUENT IN
               </h3>
             </div>
@@ -101,7 +101,7 @@ const Services = () => {
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
-            <div className="border-2 border-primary rounded-[44px] h-[42px] w-[225px] flex gap-2 items-center justify-center">
+            <div className="border-2 border-primary rounded-[44px] mx-auto h-[42px] w-[225px] flex gap-2 items-center justify-center">
             <Image src='/star-2.svg' alt="star" width={18} height={18} />
               <h3 className="text-[13px] lg:text-xs text-primary font-baseNeue font-normal">
                 WHAT YOU CAN EXPECT

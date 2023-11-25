@@ -38,7 +38,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className="md:min-h-screen bg-mydark flex justify-center md:items-center ">
+      <div className=" bg-mydark flex justify-center md:items-center ">
         <div className="max-w-[1324px] mx-auto md:mt-[167px] px-8 md:px-0 pt-[55px] md:pt-0">
           <div className="flex justify-center ml-8">
             <img
@@ -51,13 +51,13 @@ export default async function Home() {
             <img
               src="/star.svg"
               alt="star"
-              className="w-[45px] h-[45px] absolute right-[24.8rem] bottom-[5.5rem] animate-spin-slow   hidden md:block"
+              className="w-[45px] h-[45px] absolute right-[24.8rem] bottom-[5.5rem] animate-spin-slow   hidden lg:block"
             />
 
             <img
               src="/mic.svg"
               alt="mic"
-              className="absolute sm:right-[13rem] md:right-[19.5rem] top-[-3.3rem] md:top-[-5.2rem] w-14 md:w-auto hidden md:block"
+              className="absolute sm:right-[13rem] lg:right-[19.5rem] top-[-3.3rem] lg:top-[-5.2rem] w-14 md:w-auto hidden lg:block"
             />
             <img
               src="/digital-artist.svg"
@@ -70,7 +70,7 @@ export default async function Home() {
                 <img
                   src="/mic.svg"
                   alt="mic"
-                  className="absolute right-[11.8rem] top-[-2.8rem]  w-[63px] h-[61px] md:w-auto md:hidden"
+                  className="absolute right-[11.8rem] md:right-[12rem] top-[-2.8rem]  w-[63px] h-[61px] md:w-auto lg:hidden"
                 />
                 ARNOB
               </span>{" "}

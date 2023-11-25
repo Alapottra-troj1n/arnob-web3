@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const ClientSlide = () => {
   return (
     <div className=" flex justify-center items-center flex-col lg:px-0 px-5">
-      <div className=" hidden lg:block">
+      <div className=" hidden md:block">
         <Marquee
           gradient={true}
           gradientColor="#060A0E"

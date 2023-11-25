@@ -32,7 +32,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="cursor-pointer"
+              className="cursor-pointer w-[296px] md:w-full mx-auto"
             >
               <div className="relative  h-[220px] mx-auto  md:h-[481px] overflow-hidden rounded-[16px] md:rounded-[32px]  w-full ">
                 <Image
