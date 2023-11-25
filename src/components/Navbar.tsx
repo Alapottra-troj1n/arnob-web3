@@ -9,7 +9,7 @@ const Navbar = () => {
   
   return (
     <div
-      className={`bg-mydark w-full  z-10   px-5 lg:px-0 overflow-hidden font-aeonik font-normal ${
+      className={`bg-mydark w-full  z-10   px-8 md:px-0 overflow-hidden font-aeonik font-normal ${
         pathname.includes("/studio") && "hidden z-0"
       }`}
     >
@@ -23,7 +23,7 @@ const Navbar = () => {
             className="cursor-pointer"
           />
         </Link>
-        <div className="hidden lg:flex gap-8 items-center list-none">
+        <div className="hidden md:flex gap-8 items-center list-none">
           <Link className="hover:text-primary transition-colors" href={"/work"}>
             <li>WORK</li>
           </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
           width={35}
           height={35}
           alt="hamburger"
-          className="lg:hidden"
+          className="md:hidden"
         />
       </div>
     </div>
