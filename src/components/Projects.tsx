@@ -7,9 +7,9 @@ import Link from "next/link";
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   return (
-    <div className="flex justify-center flex-col max-w-[1324px] mx-auto px-5 lg:px-0">
+    <div className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0">
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
-        <div className="flex  lg:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-aeonik text-[16px] font-normal">
+        <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
           <button className=" hover:text-primary transition-all">ALL</button> /{" "}
           <button className=" text-primary underline transition-all">
             WEB3.0 PROJECTS
@@ -25,7 +25,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-y-[108px] gap-x-[36px] mt-[88px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-[40px] md:gap-y-[108px] md:gap-x-[36px] mt-[32px] md:mt-[88px]">
         {projects.map((project) => (
           <Link key={project._id} href={`/project/${project.slug.current}`}>
             <motion.div
@@ -34,7 +34,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="cursor-pointer"
             >
-              <div className="relative h-[481px] overflow-hidden rounded-[32px]  w-full ">
+              <div className="relative  h-[220px] mx-auto  md:h-[481px] overflow-hidden rounded-[32px]  w-full ">
                 <Image
                   src={project.mainImage.asset.url}
                   fill
@@ -42,14 +42,14 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   className="object-cover hover:scale-100 scale-105   transition-all duration-500"
                 />
               </div>
-              <div className="flex justify-between items-center mt-[29px] px-2 font-aeonik text-mygray">
+              <div className="flex justify-between items-center mt-[22px] md:mt-[29px] px-2 font-aeonik text-mygray">
                 <div className="cursor-pointer">
-                  <h2 className="text-[22px] font-normal">{project.title}</h2>
-                  <p className="font-normal text-[17px] text-[#717F8E]  ">
+                  <h2 className="text-[14px] md:text-[22px] font-normal">{project.title}</h2>
+                  <p className="font-normal text-[10px] md:text-[17px] text-[#717F8E]  ">
                     {project.subtitle}
                   </p>
                 </div>
-                <div className="border w-[89px] h-[60px] rounded-[30px] text-mygray border-mygray cursor-pointer group flex justify-center items-center">
+                <div className="border hidden md:flex w-[89px] h-[60px] rounded-[30px] text-mygray border-mygray cursor-pointer group justify-center items-center">
                   <svg
                     width="22"
                     height="16"
@@ -62,6 +62,22 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                       fill="#CCCCCC"
                     />
                   </svg>
+                  
+                </div>
+                <div className="border md:hidden w-[58px] h-[39px]  rounded-[30px] text-mygray border-mygray cursor-pointer group flex justify-center items-center">
+                  <svg
+                    width="14"
+                    height="11"
+                    viewBox="0 0 22 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
+                      fill="#CCCCCC"
+                    />
+                  </svg>
+                  
                 </div>
               </div>
             </motion.div>
@@ -69,8 +85,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
         ))}
       </div>
 
-      <div className="mt-[86px] flex gap-3 items-center justify-center group">
-        <h2 className="text-center font-normal font-aeonik text-[17px] cursor-pointer hover:text-primary transition-all ">
+      <div className="mt-[39px] md:mt-[86px] flex gap-3 items-center justify-center group">
+        <h2 className="text-center font-medium md:font-normal font-aeonik text-[12px] md:text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
         </h2>
         <svg

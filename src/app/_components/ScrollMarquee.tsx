@@ -5,10 +5,10 @@ import { useScroll, useTransform, motion } from "framer-motion";
 const ScrollMarquee = () => {
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [1, 0.6], [0, -400]);
-  const z = useTransform(scrollYProgress, [1, 0.6], [0, 400]);
+  const z = useTransform(scrollYProgress, [1, 0.6], [0, 3000]);
 
   return (
-    <div className="w-full flex justify-center items-center antialiased min-h-[20vh] lg:min-h-[45vh] overflow-hidden">
+    <div className="w-full flex justify-center items-center antialiased min-h-[20vh] md:min-h-[45vh] overflow-hidden">
       {/* Pc */}
       <div>
       <div className="rotate-6 translate-y-10 hidden lg:block">
@@ -19,16 +19,31 @@ const ScrollMarquee = () => {
         >
           30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
           PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
         </motion.div>
       </div>
 
        <div className="-rotate-6 hidden lg:block">
        <motion.div
           style={{ x: z }}
-          initial={{ translateX: -1000 }}
+          
           transition={{ease: 'easeInOut'}}
           className=" border-y-2 z-10 border-mygray pt-1 bg-mydark text-mygray font-bold font-baseNeue w-max text-6xl overflow-hidden whitespace-nowrap"
         >
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
+          30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
+          PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
+
           30+WEB3 PROJECTS X 100+TOTAL PROJECTS 30+WEB3 PROJECTS X 100+TOTAL
           PROJECTS 30+WEB3 PROJECTS X 100+TOTAL PROJECTS
         </motion.div>
