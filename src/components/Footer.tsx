@@ -71,16 +71,16 @@ const Footer = () => {
       </div>
 
       {/* mobile */}
-      <div className="max-w-6xl mx-auto py-4 lg:hidden px-5">
+      <div className="max-w-6xl mx-auto py-4 lg:hidden px-8">
         <div className="grid grid-cols-2">
-          <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[17px] font-normal">
-            <div className="flex items-center gap-3 group cursor-pointer hover:text-primary ">
+          <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[15px] font-medium">
+            <div className="flex items-center gap-y-[16px] group cursor-pointer hover:text-primary ">
               Behance
               <Image
                 src={"/footer-arrow.svg"}
                 alt="star"
-                width={12}
-                height={12}
+                width={18}
+                height={13}
               />
             </div>
             <div className="flex items-center gap-[8px] group cursor-pointer hover:text- ">
@@ -88,8 +88,8 @@ const Footer = () => {
               <Image
                 src={"/footer-arrow.svg"}
                 alt="star"
-                width={12}
-                height={12}
+                width={18}
+                height={13}
               />
             </div>
             <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary ">
@@ -97,8 +97,8 @@ const Footer = () => {
               <Image
                 src={"/footer-arrow.svg"}
                 alt="star"
-                width={12}
-                height={12}
+                width={18}
+                height={13}
               />
             </div>
             <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary ">
@@ -106,8 +106,8 @@ const Footer = () => {
               <Image
                 src={"/footer-arrow.svg"}
                 alt="star"
-                width={12}
-                height={12}
+                width={18}
+                height={13}
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ const Footer = () => {
               </button>
             </div>
             <div>
-              <p className="text-gray-400 font-light text-xs text-right">
+              <p className="text-[#717F8E] font-normal text-[10px] text-right">
                 ©2023 Arnob Chakma. All rights reserved.
               </p>
             </div>
