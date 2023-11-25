@@ -34,7 +34,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="cursor-pointer"
             >
-              <div className="relative  h-[220px] mx-auto  md:h-[481px] overflow-hidden rounded-[32px]  w-full ">
+              <div className="relative  h-[220px] mx-auto  md:h-[481px] overflow-hidden rounded-[16px] md:rounded-[32px]  w-full ">
                 <Image
                   src={project.mainImage.asset.url}
                   fill

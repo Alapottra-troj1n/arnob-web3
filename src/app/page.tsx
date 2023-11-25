@@ -96,14 +96,14 @@ export default async function Home() {
         <Projects projects={projects} />
       </div>
 
-      <div className="min-h-screen bg-mydark pt-[278px]   ">
+      <div className="md:min-h-screen bg-mydark pt-[130px] md:pt-[278px]   ">
         <Services />
       </div>
-      <div className=" bg-mydark pt-[60px]   ">
+      <div className=" bg-mydark pt-[50px] md:pt-[60px]   ">
         <ScrollMarquee />
       </div>
 
-      <div className=" bg-mydark pt-[159px] pb-[235px] ">
+      <div className=" bg-mydark pt-[126px] pb-[107px] md:pt-[159px] md:pb-[235px] ">
         <ConnectSection />
       </div>
     </>
