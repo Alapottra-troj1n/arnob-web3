@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Project } from "../../lib/types";
 import Link from "next/link";
-import {  useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   const [projectsData, setProjectsData] = useState<Project[]>(projects);
@@ -11,26 +11,27 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   const [category, setCategory] = useState<string>("All");
   const handleCategoryChange = (selectedCategory: string) => {
     setCategory(selectedCategory);
-     if(categoryRef.current){
-        categoryRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
+    if (categoryRef.current) {
+      categoryRef.current.scrollIntoView({ behavior: "smooth" });
+    }
     if (selectedCategory === "All") {
       setProjectsData(projects);
       return;
     }
-    
+
     const filteredProjects = projects.filter((project) =>
       project.categories.some((category) => category.title === selectedCategory)
     );
     setProjectsData(filteredProjects);
   };
 
-
-
   return (
-    <div ref={categoryRef} className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0">
+    <div
+      ref={categoryRef}
+      className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0"
+    >
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
-        <div  className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+        <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
           <button
             onClick={() => handleCategoryChange("All")}
             className={`hover:text-primary transition-all ${
@@ -80,12 +81,30 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               className="cursor-pointer w-[296px] md:w-full mx-auto"
             >
               <div className="relative  h-[220px] mx-auto  md:h-[481px] overflow-hidden rounded-[16px] md:rounded-[32px]  w-full ">
-                <Image
-                  src={project.mainImage.asset.url}
-                  fill
-                  alt="mad-meta-scientist"
-                  className="object-cover hover:scale-100 scale-105   transition-all duration-500"
-                />
+                {project.mainImage.type == "image" && (
+                  <Image
+                    src={project.mainImage.image.asset.url}
+                    fill
+                    alt="mad-meta-scientist"
+                    className="object-cover hover:scale-100 scale-105   transition-all duration-500"
+                  />
+                )}
+                {project.mainImage.type == "video" && (
+                  <video
+                    
+                    width="100%"
+                    autoPlay
+                    muted
+                    loop
+                    height="auto"
+                    className="object-contain hover:scale-100 scale-105 transition-all duration-500"
+                  >
+                    <source
+                      src={project.mainImage.video.asset.url}
+                      type="video/mp4"
+                    />
+                  </video>
+                )}
               </div>
               <div className="flex justify-between items-center mt-[22px] md:mt-[29px] px-2 font-aeonik text-mygray">
                 <div className="cursor-pointer">
@@ -128,13 +147,14 @@ const Projects = ({ projects }: { projects: Project[] }) => {
             </motion.div>
           </Link>
         ))}
-      
       </div>
-      {
-          !projectsData.length && (
-            <div className="w-full"><h2 className="text-center text-xs text-gray-500 py-24">No Projects Found</h2></div>
-          )
-        }
+      {!projectsData.length && (
+        <div className="w-full">
+          <h2 className="text-center text-xs text-gray-500 py-24">
+            No Projects Found
+          </h2>
+        </div>
+      )}
 
       <div className="mt-[39px] md:mt-[86px] flex gap-3 items-center justify-center group">
         <h2 className="text-center font-medium md:font-normal font-aeonik text-[12px] md:text-[17px] cursor-pointer hover:text-primary transition-all ">

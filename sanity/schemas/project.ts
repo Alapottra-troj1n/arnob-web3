@@ -13,14 +13,40 @@ export default defineType({
     }),
     defineField({
       name: "mainImage",
-      title: "Main image",
-      type: "image",
-      validation: (Rule) => Rule.required(),
-      options: {
-        hotspot: true,
-      },
-
+      title: "Main media",
+      type: "object",
       fields: [
+        {
+          name: "type",
+          type: "string",
+          title: "Media Type",
+          options: {
+            list: [
+              { title: "Image Upload", value: "image" },
+              { title: "Video Upload", value: "video" },
+            ],
+            layout: "radio",
+          },
+        },
+        {
+          name: "image",
+          title: "Image",
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+          hidden: ({ parent }) => parent?.type !== "image",
+        },
+        {
+          name: 'video',
+          title: 'Video',
+          type: 'file',
+          options: {
+            accept: 'video/*', // Specify the allowed video file types
+          },
+        
+          hidden: ({ parent }) => parent?.type !== "video",
+        },
         {
           name: "alt",
           type: "string",
@@ -65,10 +91,10 @@ export default defineType({
         },
       ],
     }),
-    defineField( {
-      name: 'year',
-      title: 'Year',
-      type: 'number',
+    defineField({
+      name: "year",
+      title: "Year",
+      type: "number",
       validation: (Rule) => Rule.integer().min(1900).max(2100),
     }),
     defineField({

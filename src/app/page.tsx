@@ -17,9 +17,16 @@ export default async function Home() {
       subtitle,
       service,
       industry,
-      mainImage{
-      asset->{url}
-      },
+      mainImage {
+    type,
+    image {
+      asset->{url, metadata}
+    },
+    video{
+      asset->{url, metadata}
+    },
+    alt
+  },
       categories[]->{
         title,
       },
@@ -30,8 +37,6 @@ export default async function Home() {
         asset->{url}
       }
     }
-  
-
 `,
     config: { cache: "no-cache" },
   });
@@ -66,7 +71,6 @@ export default async function Home() {
             />
             <h1 className="text-center text-5xl md:text-[90px] text-primary font-baseNeue font-black  md:leading-[80px]  ">
               <span className="relative">
-       
                 <img
                   src="/mic.svg"
                   alt="mic"
@@ -84,7 +88,6 @@ export default async function Home() {
               STRATEGY.
             </p>
           </div>
-          
 
           <div className=" bg-mydark pt-[90px]  md:pt-[148px]">
             <ClientSlide />
