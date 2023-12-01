@@ -7,9 +7,18 @@ interface Project {
   year: number,
   description: string;
   mainImage: {
-    asset: {
-      url: string;
-    };
+    type: string,
+    video: {
+      asset: {
+        url: string;
+      };
+    },
+    image: {
+      asset: {
+        url: string;
+      };
+    }
+   
   };
   categories: { title: string }[];
   slug: {
