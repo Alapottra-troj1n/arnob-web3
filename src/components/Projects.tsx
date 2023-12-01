@@ -1,32 +1,77 @@
 "use client";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Project } from "../../lib/types";
 import Link from "next/link";
+import {  useRef, useState } from "react";
 
 const Projects = ({ projects }: { projects: Project[] }) => {
+  const [projectsData, setProjectsData] = useState<Project[]>(projects);
+  const categoryRef = useRef<HTMLDivElement>(null);
+  const [category, setCategory] = useState<string>("All");
+  const handleCategoryChange = (selectedCategory: string) => {
+    setCategory(selectedCategory);
+     if(categoryRef.current){
+        categoryRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    if (selectedCategory === "All") {
+      setProjectsData(projects);
+      return;
+    }
+    
+    const filteredProjects = projects.filter((project) =>
+      project.categories.some((category) => category.title === selectedCategory)
+    );
+    setProjectsData(filteredProjects);
+  };
+
+
+
   return (
-    <div className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0">
+    <div ref={categoryRef} className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0">
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
-        <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
-          <button className=" hover:text-primary transition-all">ALL</button> /{" "}
-          <button className=" text-primary underline transition-all">
+        <div  className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+          <button
+            onClick={() => handleCategoryChange("All")}
+            className={`hover:text-primary transition-all ${
+              category === "All" && "text-primary underline"
+            }`}
+          >
+            ALL
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Web3")}
+            className={`hover:text-primary transition-all ${
+              category === "Web3" && "text-primary underline"
+            }`}
+          >
             WEB3.0 PROJECTS
           </button>{" "}
           /{" "}
-          <button className=" hover:text-primary transition-all">
+          <button
+            onClick={() => handleCategoryChange("Brand Identity & Logo Design")}
+            className={`hover:text-primary transition-all ${
+              category === "Brand Identity & Logo Design" &&
+              "text-primary underline"
+            }`}
+          >
             BRAND IDENTITY & LOGO DESIGN
           </button>{" "}
           /{" "}
-          <button className=" hover:text-primary transition-all">
+          <button
+            onClick={() => handleCategoryChange("Graphic Experimentation")}
+            className={`hover:text-primary transition-all ${
+              category === "Graphic Experimentation" && "text-primary underline"
+            }`}
+          >
             GRAPHIC EXPERIMENTATION
           </button>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-[40px] md:gap-y-[108px] md:gap-x-[36px] mt-[32px] md:mt-[88px]">
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <Link key={project._id} href={`/project/${project.slug.current}`}>
             <motion.div
               initial={{ translateY: 100, opacity: 0 }}
@@ -44,7 +89,9 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               </div>
               <div className="flex justify-between items-center mt-[22px] md:mt-[29px] px-2 font-aeonik text-mygray">
                 <div className="cursor-pointer">
-                  <h2 className="text-[14px] md:text-[22px] font-normal">{project.title}</h2>
+                  <h2 className="text-[14px] md:text-[22px] font-normal">
+                    {project.title}
+                  </h2>
                   <p className="font-normal text-[10px] md:text-[17px] text-[#717F8E]  ">
                     {project.subtitle}
                   </p>
@@ -62,7 +109,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                       fill="#CCCCCC"
                     />
                   </svg>
-                  
                 </div>
                 <div className="border md:hidden w-[58px] h-[39px]  rounded-[30px] text-mygray border-mygray cursor-pointer group flex justify-center items-center">
                   <svg
@@ -77,13 +123,18 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                       fill="#CCCCCC"
                     />
                   </svg>
-                  
                 </div>
               </div>
             </motion.div>
           </Link>
         ))}
+      
       </div>
+      {
+          !projectsData.length && (
+            <div className="w-full"><h2 className="text-center text-xs text-gray-500 py-24">No Projects Found</h2></div>
+          )
+        }
 
       <div className="mt-[39px] md:mt-[86px] flex gap-3 items-center justify-center group">
         <h2 className="text-center font-medium md:font-normal font-aeonik text-[12px] md:text-[17px] cursor-pointer hover:text-primary transition-all ">

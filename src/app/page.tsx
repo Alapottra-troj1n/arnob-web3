@@ -47,7 +47,7 @@ export default async function Home() {
               className=" md:hidden mb-4"
             />
           </div>
-          <div className="relative w-[80%] mx-auto ">
+          <div className="relative w-[80%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
             <img
               src="/star.svg"
               alt="star"
@@ -77,7 +77,7 @@ export default async function Home() {
               CAN DESIGN FOR YOU
             </h1>
           </div>
-          <div className="mt-[46px] md:mt-[68px] md:w-[40%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
+          <div className="mt-[46px] md:mt-[68px] md:w-[40%] mx-auto animate-fade-up animate-delay-500 animate-duration-600 animate-ease-in-out ">
             <p className="text-mygray uppercase text-center text-xl leading-[1]   md:text-[32px] md:leading-[34px] tracking-wide font-normal  ">
               HELPING <br /> <span className="text-primary">WEB3.0</span>{" "}
               STARTUPS <br /> THROUGH FUTURE-PROOF TIMELESS DESIGN <br />
