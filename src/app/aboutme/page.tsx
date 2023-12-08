@@ -3,8 +3,8 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="min-h-screen bg-mydark flex justify-center items-center flex-col overflow-x-hidden">
-      <div className="max-w-[1324px] mx-auto lg:px-0 px-8  pt-[74px] lg:pt-[155px] grid lg:grid-cols-2 grid-cols-1 gap-[90px] lg:pb-[310px] pb-[175px] ">
-        <div className="">
+      <div className="max-w-[1324px] mx-auto lg:px-0 px-8  pt-[74px] lg:pt-[155px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
+        <div >
         <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
               A Visual <br /> Design <br /> Alchemist
             </h2>
@@ -17,7 +17,7 @@ const AboutMe = () => {
             <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase hidden lg:block">
               A Visual Design Alchemist
             </h2>
-            <p className="font-aeonik font-normal text-2xl leading-snug mt-[45px] text-mygray">
+            <p className="font-aeonik font-normal text-2xl leading-snug lg:mt-[45px] text-mygray">
               I've been a brand identity expert and design generalist for 8
               years, with the last 5 of those years devoted to working on Web3
               brand identity & Communication design.
