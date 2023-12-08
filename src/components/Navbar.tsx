@@ -68,8 +68,8 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute top-3 right-3 md:hidden  transition-all opacity-0 ${
-            navOpen ? "translate-x-0 opacity-100 block" : "transform translate-x-56 hidden opacity-0"
+          className={`fixed top-3 right-3 md:hidden  transition-all opacity-0 ${
+            navOpen ? "translate-x-0 opacity-100 block " : "transform translate-x-56 hidden opacity-0"
           }  list-none bg-gray-900  px-8 py-10 rounded-2xl z-40`}
         >
           <div className="flex flex-col gap-5 ">
@@ -112,7 +112,7 @@ const Navbar = () => {
             width={35}
             onClick={() => setNavOpen(!navOpen)}
             height={35}
-            className="md:hidden cursor-pointer z-50 "
+            className="md:hidden cursor-pointer z-50 fixed right-6"
           />
         ) : (
           <Image
