@@ -43,7 +43,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className=" bg-mydark flex justify-center md:items-center overflow-x-hidden ">
+      <div className=" bg-mydark flex justify-center md:items-center overscroll-x-none overflow-x-hidden ">
         <div className="max-w-[1324px] mx-auto md:mt-[167px] px-8 md:px-0 pt-[55px] md:pt-0">
           <div className="flex justify-center ml-8">
             <img
