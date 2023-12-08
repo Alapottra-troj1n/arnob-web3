@@ -28,7 +28,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div
       ref={categoryRef}
-      className="flex justify-center flex-col max-w-[1324px]  overflow-x-hidden  mx-auto px-8 lg:px-0"
+      className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0"
     >
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
         <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
