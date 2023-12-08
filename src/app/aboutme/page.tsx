@@ -1,17 +1,20 @@
+import Image from "next/image";
+
 const AboutMe = () => {
   return (
-    <div className="min-h-screen bg-mydark flex justify-center items-center flex-col">
-      <div className="max-w-[1324px] mx-auto  pt-[155px]  grid grid-cols-2 gap-[90px] pb-[310px]">
+    <div className="min-h-screen bg-mydark flex justify-center items-center flex-col overflow-x-hidden">
+      <div className="max-w-[1324px] mx-auto lg:px-0 px-8  pt-[74px] lg:pt-[155px] grid lg:grid-cols-2 grid-cols-1 gap-[90px] lg:pb-[310px] pb-[175px] ">
         <div className="">
-          <img
-            className="w-[408px] h-[551px] ml-auto"
-            src="/arnob.png"
-            alt=""
-          />
+        <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
+              A Visual <br /> Design <br /> Alchemist
+            </h2>
+          <Image src={'/arnob.png'} alt="arnob" height={551} width={408} className="ml-auto hidden lg:block"  />
+          <Image src={'/arnob.png'} alt="arnob" height={334} width={296} className="mx-auto lg:hidden"  />
+          
         </div>
         <div>
           <div className="ml-2">
-            <h2 className="font-baseNeue font-black text-[56px] leading-none text-primary">
+            <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase hidden lg:block">
               A Visual Design Alchemist
             </h2>
             <p className="font-aeonik font-normal text-2xl leading-snug mt-[45px] text-mygray">
@@ -30,13 +33,13 @@ const AboutMe = () => {
               in the ever-evolving Web 3.0 environment.
             </p>
           </div>
-          <h2 className=" cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 text-[#CCCCCC]">
+          <h2 className=" hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 text-[#CCCCCC]">
             Download CV
           </h2>
         </div>
       </div>
 
-      <div className="flex flex-col justify-center mb-[233px]">
+      <div className="flex flex-col justify-center lg:mb-[233px] mb-[107px]">
         <h1 className="text-center text-6xl font-black uppercase text-primary hidden md:block">
           CRAFT <br /> SOMETHING <br /> SUPERB!
         </h1>
