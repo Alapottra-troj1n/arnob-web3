@@ -18,12 +18,12 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-mydark w-full overflow-x-hidden  z-10   px-8 md:px-0 overflow-hidden font-aeonik font-normal ${
+      className={`bg-mydark w-full overflow-x-hidden  z-10   px-8 md:px-0 font-aeonik font-normal ${
         pathname.includes("/studio") && "hidden z-0"
       }`}
       ref={navbarRef}
     >
-      <div className="max-w-[1324px] h-[90px] mx-auto flex justify-between items-center text-mygray">
+      <div className="max-w-[1324px] h-[90px] mx-auto flex justify-between items-center text-mygray overflow-x-hidden ">
         <Link href={"/"}>
           <Image
             src={"/logo.svg"}
@@ -69,7 +69,7 @@ const Navbar = () => {
 
         <div
           className={`absolute top-3 right-3 md:hidden  transition-all opacity-0 ${
-            navOpen ? "translate-x-0 opacity-100" : "transform translate-x-56"
+            navOpen ? "translate-x-0 opacity-100 block" : "transform translate-x-56 hidden opacity-0"
           }  list-none bg-gray-900  px-8 py-10 rounded-2xl z-40`}
         >
           <div className="flex flex-col gap-5 ">
