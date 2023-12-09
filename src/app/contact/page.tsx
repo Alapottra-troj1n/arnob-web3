@@ -37,6 +37,26 @@ const Contact = () => {
             </div>
           </div>
 
+          <div className="flex flex-col w-full">
+            <label  className="text-[18px] text-mygray">How Much Your Budget Range?</label>
+            <div className="mt-[27px] flex flex-wrap gap-y-[12px] gap-x-[9px]">
+                  <button type="button" className="py-[14px] px-[21px] rounded-[26.5px] border border-mygray text-mygray text-[16px] font-aeonik">$500 - $1K</button>
+                  <button type="button" className="py-[14px] px-[21px] rounded-[26.5px] border border-mygray text-mygray text-[16px] font-aeonik">$1K - $2K</button>
+                  <button type="button" className="py-[14px] px-[21px] rounded-[26.5px] border border-mygray text-mygray text-[16px] font-aeonik">$2K - $3K</button>
+                  <button type="button" className="py-[14px] px-[21px] rounded-[26.5px] border border-mygray text-mygray text-[16px] font-aeonik">&gt;$3K</button>
+             
+            </div>
+          </div>
+
+          <div className="flex flex-col w-full">
+            <label className="text-[18px] text-mygray">Message</label>
+            <textarea rows={7}  name="message" placeholder="I Want To Build.." className="bg-transparent border-b-[1px] mt-2 border-[#8E9BA9]  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]" >
+
+            </textarea>
+          </div>
+          <div className="flex justify-end">
+            <button className="h-[78px] w-[170px] bg-mylightgray text-mydark rounded-[39px] font-medium text-[22px] hover:bg-primary transition-all">SUBMIT</button>
+          </div>
 
 
           
