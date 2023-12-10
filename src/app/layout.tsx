@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import GlobalWrapper from "@/components/GlobalWrapper";
 
 const baseNeue = localFont({
   variable: "--font-base-neue",
@@ -102,7 +103,10 @@ export default function RootLayout({
       >
         <Navbar />
         <Toaster />
+        <GlobalWrapper>
         {children}
+        </GlobalWrapper>
+        
         <Footer/>
       </body>
     </html>
