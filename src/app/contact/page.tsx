@@ -38,7 +38,7 @@ const Contact = () => {
   };
   return (
     <div className="min-h-screen bg-mydark ">
-      <div className="max-w-[1324px] mx-auto lg:px-0 px-8  pt-[74px] lg:pt-[141px]  lg:pb-[310px] pb-[175px] ">
+      <div className="max-w-[1324px] mx-auto px-10 2xl:px-0  pt-[74px] lg:pt-[141px]  lg:pb-[310px] pb-[175px] ">
         <h2 className="text-mywhite font-baseNeue font-black text-[48px] leading-none uppercase text-center">
           bonjour! <br /> tell me about <br /> your idea
         </h2>

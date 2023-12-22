@@ -44,7 +44,7 @@ export default async function Home() {
   return (
     <>
       <div className=" bg-mydark flex justify-center md:items-center overscroll-x-none overflow-x-hidden ">
-        <div className="max-w-[1324px] mx-auto md:mt-[167px] px-8 md:px-0 pt-[55px] md:pt-0">
+        <div className="max-w-[1324px] mx-auto md:mt-[167px] px-10 2xl:px-0 pt-[55px] md:pt-0">
           <div className="flex justify-center ml-8">
             <img
               src="/digital-artist.svg"
@@ -56,7 +56,7 @@ export default async function Home() {
             <img
               src="/star.svg"
               alt="star"
-              className="w-[45px] h-[45px] absolute right-[24.8rem] bottom-[5.5rem] animate-spin-slow   hidden lg:block"
+              className="w-[45px] h-[45px] absolute right-[22.8rem] bottom-[5.5rem] animate-spin-slow   hidden lg:block"
             />
 
             <img
