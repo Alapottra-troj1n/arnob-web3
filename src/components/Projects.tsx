@@ -1,14 +1,16 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Project } from "../../lib/types";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   const [projectsData, setProjectsData] = useState<Project[]>(projects);
   const categoryRef = useRef<HTMLDivElement>(null);
   const [category, setCategory] = useState<string>("All");
+  
+
   const handleCategoryChange = (selectedCategory: string) => {
     setCategory(selectedCategory);
     if (categoryRef.current) {
@@ -24,52 +26,113 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     );
     setProjectsData(filteredProjects);
   };
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-300px" }
+    );
+    observer.observe(categoryRef.current!);
+  }, []);
+  console.log(isIntersecting)
   return (
     <div
       ref={categoryRef}
+      
       className="flex justify-center flex-col max-w-[1324px] mx-auto px-10 2xl:px-0"
     >
-      <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
-        <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
-          <button
-            onClick={() => handleCategoryChange("All")}
-            className={`hover:text-primary transition-all ${
-              category === "All" && "text-primary underline"
-            }`}
-          >
-            ALL
-          </button>{" "}
-          /{" "}
-          <button
-            onClick={() => handleCategoryChange("Web3")}
-            className={`hover:text-primary transition-all ${
-              category === "Web3" && "text-primary underline"
-            }`}
-          >
-            WEB3.0 PROJECTS
-          </button>{" "}
-          /{" "}
-          <button
-            onClick={() => handleCategoryChange("Brand Identity & Logo Design")}
-            className={`hover:text-primary transition-all ${
-              category === "Brand Identity & Logo Design" &&
-              "text-primary underline"
-            }`}
-          >
-            BRAND IDENTITY & LOGO DESIGN
-          </button>{" "}
-          /{" "}
-          <button
-            onClick={() => handleCategoryChange("Graphic Experimentation")}
-            className={`hover:text-primary transition-all ${
-              category === "Graphic Experimentation" && "text-primary underline"
-            }`}
-          >
-            GRAPHIC EXPERIMENTATION
-          </button>
-        </div>
+      <motion.div
+        className={`flex lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
+          isIntersecting ? "transform translate-y-0" : "transform -translate-y-full"
+        }`}
+      >
+      <div className="flex md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+        <button
+          onClick={() => handleCategoryChange('All')}
+          className={`hover:text-primary transition-all ${
+            category === 'All' && 'text-primary underline'
+          }`}
+        >
+          ALL
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Web3')}
+          className={`hover:text-primary transition-all ${
+            category === 'Web3' && 'text-primary underline'
+          }`}
+        >
+          WEB3.0 PROJECTS
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Brand Identity & Logo Design')}
+          className={`hover:text-primary transition-all ${
+            category === 'Brand Identity & Logo Design' &&
+            'text-primary underline'
+          }`}
+        >
+          BRAND IDENTITY & LOGO DESIGN
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Graphic Experimentation')}
+          className={`hover:text-primary transition-all ${
+            category === 'Graphic Experimentation' && 'text-primary underline'
+          }`}
+        >
+          GRAPHIC EXPERIMENTATION
+        </button>
       </div>
+    </motion.div>
+
+    <motion.div
+        className={`flex lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5 w-full transition delay-75 ${
+          isIntersecting ? " -translate-y-10 opacity-0 " : ""
+        }`}
+      >
+      <div className="flex md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+        <button
+          onClick={() => handleCategoryChange('All')}
+          className={`hover:text-primary transition-all ${
+            category === 'All' && 'text-primary underline'
+          }`}
+        >
+          ALL
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Web3')}
+          className={`hover:text-primary transition-all ${
+            category === 'Web3' && 'text-primary underline'
+          }`}
+        >
+          WEB3.0 PROJECTS
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Brand Identity & Logo Design')}
+          className={`hover:text-primary transition-all ${
+            category === 'Brand Identity & Logo Design' &&
+            'text-primary underline'
+          }`}
+        >
+          BRAND IDENTITY & LOGO DESIGN
+        </button>{' '}
+        /{' '}
+        <button
+          onClick={() => handleCategoryChange('Graphic Experimentation')}
+          className={`hover:text-primary transition-all ${
+            category === 'Graphic Experimentation' && 'text-primary underline'
+          }`}
+        >
+          GRAPHIC EXPERIMENTATION
+        </button>
+      </div>
+    </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-y-[40px] sm:gap-y-[108px] sm:gap-x-[36px] mt-[32px] sm:mt-[88px]">
         {projectsData.map((project) => (
