@@ -18,12 +18,12 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-mydark w-full overflow-x-hidden  z-10   px-8 md:px-0 font-aeonik font-normal ${
+      className={`bg-mydark w-full overflow-x-hidden  z-10    font-aeonik font-normal ${
         pathname.includes("/studio") && "hidden z-0"
       }`}
       ref={navbarRef}
     >
-      <div className="max-w-[1324px] h-[90px] mx-auto flex justify-between items-center text-mygray overflow-x-hidden ">
+      <div className="max-w-[1324px] h-[90px] px-10 2xl:px-0  mx-auto flex justify-between items-center text-mygray overflow-x-hidden ">
         <Link href={"/"}>
           <Image
             src={"/logo.svg"}

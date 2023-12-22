@@ -6,7 +6,7 @@ const Footer = () => {
     <div
       className={`bg-mydark  min-h-[49px] pb-[54px]`}
     >
-      <div className=" max-w-[1324px] overflow-x-hidden  mx-auto  hidden lg:block">
+      <div className=" max-w-[1324px] overflow-x-hidden  mx-auto  hidden lg:block ">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
             <p className="text-[#717F8E] text-[15px]  font-light font-aeonik">
@@ -66,7 +66,7 @@ const Footer = () => {
       </div>
 
       {/* mobile */}
-      <div className="max-w-6xl mx-auto py-4 lg:hidden px-8">
+      <div className="max-w-6xl mx-auto py-4 lg:hidden px-10 2xl:px-0">
         <div className="grid grid-cols-2">
           <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[15px] font-medium">
             <div className="flex items-center gap-y-[16px] group cursor-pointer hover:text-primary ">

@@ -67,7 +67,7 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
-      <div className="lg:pt-24 text-mygray max-w-[1324px] mx-auto px-5 lg:px-0">
+      <div className="lg:pt-24 text-mygray max-w-[1324px] mx-auto px-10 2xl:px-0">
         <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
             <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">

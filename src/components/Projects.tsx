@@ -28,7 +28,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div
       ref={categoryRef}
-      className="flex justify-center flex-col max-w-[1324px] mx-auto px-8 lg:px-0"
+      className="flex justify-center flex-col max-w-[1324px] mx-auto px-10 2xl:px-0"
     >
       <div className="flex top-0 sticky lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5">
         <div className="flex  md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
@@ -71,9 +71,9 @@ const Projects = ({ projects }: { projects: Project[] }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-y-[40px] md:gap-y-[108px] md:gap-x-[36px] mt-[32px] md:mt-[88px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-y-[40px] sm:gap-y-[108px] sm:gap-x-[36px] mt-[32px] sm:mt-[88px]">
         {projectsData.map((project) => (
-          <Link key={project._id} href={`/project/${project.slug.current}`}>
+          <Link key={project._id} className="group" href={`/project/${project.slug.current}`}>
             <motion.div
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
@@ -106,26 +106,28 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   </video>
                 )}
               </div>
-              <div className="flex justify-between items-center mt-[22px] md:mt-[29px] px-2 font-aeonik text-mygray">
+              <div className="flex justify-between items-center mt-[22px] md:mt-[29px] px-2 font-aeonik text-mygray ">
                 <div className="cursor-pointer">
-                  <h2 className="text-[14px] md:text-[22px] font-normal">
+                  <h2 className="text-[14px] md:text-[22px] font-normal group-hover:text-primary transition">
                     {project.title}
                   </h2>
                   <p className="font-normal text-[10px] md:text-[17px] text-[#717F8E]  ">
                     {project.subtitle}
                   </p>
                 </div>
-                <div className="border hidden md:flex w-[89px] h-[60px] rounded-[30px] text-mygray border-mygray cursor-pointer group justify-center items-center">
+                <div className="border hidden md:flex w-[89px] h-[60px] rounded-[30px] text-mygray border-mygray group-hover:border-primary cursor-pointer group justify-center items-center">
                   <svg
                     width="22"
                     height="16"
                     viewBox="0 0 22 16"
                     fill="none"
+                    
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
                       fill="#CCCCCC"
+                      className="group-hover:fill-primary  transition"
                     />
                   </svg>
                 </div>
@@ -166,10 +168,13 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           viewBox="0 0 22 16"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="group-hover:translate-x-2 transition"
+         
         >
           <path
             d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
             fill="#CCCCCC"
+            className="group-hover:fill-primary transition "
           />
         </svg>
       </div>
