@@ -57,7 +57,7 @@ const Contact = () => {
               required
               {...register("name")}
               placeholder="Damien.."
-              className="bg-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
               required
               {...register("email")}
               placeholder="Damien@gmail.com"
-              className="bg-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
               required
               {...register("companyName")}
               placeholder="Damian Inc"
-              className="bg-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -157,7 +157,7 @@ const Contact = () => {
               {...register("message")}
               name="message"
               placeholder="I Want To Build.."
-              className="bg-transparent border-b-[1px] mt-2 border-[#8E9BA9]  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9]  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             ></textarea>
           </div>
           <div className="flex justify-end">
