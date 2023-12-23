@@ -6,7 +6,7 @@ const Footer = () => {
     <div
       className={`bg-mydark  min-h-[49px] pb-[54px]`}
     >
-      <div className=" max-w-[1324px] overflow-x-hidden  mx-auto  hidden lg:block ">
+      <div className=" max-w-[1324px] overflow-x-hidden  mx-auto  hidden lg:block px-10 2xl:px-0">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
             <p className="text-[#717F8E] text-[15px]  font-light font-aeonik">

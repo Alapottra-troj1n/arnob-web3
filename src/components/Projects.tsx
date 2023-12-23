@@ -53,14 +53,14 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div
       ref={categoryRef}
-      className="flex  md:static justify-center flex-col max-w-[1324px] mx-auto px-10 2xl:px-0 "
+      className="flex md:static justify-center flex-col max-w-[1324px] mx-auto px-10 2xl:px-0 min-h-screen"
     >
       <motion.div
         className={`flex  lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
           isIntersecting ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
-      <div className="flex md:gap-5 gap-3 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+      <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
         <button
           onClick={() => handleCategoryChange('All')}
           className={`hover:text-primary transition-all ${
@@ -105,7 +105,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           isIntersecting ? " -translate-y-10 opacity-0 " : ""
         }`}
       >
-      <div className="flex gap-2 md:gap-5 flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
+      <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
         <button
           onClick={() => handleCategoryChange('All')}
           className={`hover:text-primary transition-all ${
