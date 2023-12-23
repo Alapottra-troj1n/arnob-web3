@@ -58,8 +58,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       className="flex md:static justify-center flex-col max-w-[1324px] mx-auto px-8 sm:px-10 2xl:px-0 min-h-screen"
     >
       <motion.div
-        className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-30 bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
-          isIntersecting ? "transform translate-y-0" : "transform -translate-y-full"
+        className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-20  bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
+          isIntersecting ? "transform translate-y-[90px] opacity-100  border-y border-gray-600 mt-[1px] md:mt-[0px]" : "transform -translate-y-full opacity-0"
         }`}
       >
       <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">

@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-mydark w-full overflow-x-hidden  z-10    font-aeonik font-normal ${
+      className={`bg-mydark w-full overflow-x-hidden  z-30    font-aeonik font-normal fixed ${
         pathname.includes("/studio") && "hidden z-0"
       }`}
       ref={navbarRef}
