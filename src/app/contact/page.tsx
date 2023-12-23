@@ -1,6 +1,9 @@
 "use client";
 
-import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
+import { useRef } from "react";
 
 interface ContactForm {
   name: string;
@@ -29,13 +32,32 @@ const Contact = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     control,
     formState: { errors },
   } = useForm<ContactForm>();
 
-  const onSubmit: SubmitHandler<ContactForm> = (data) => {
-    console.log(data);
+  const formRef = useRef(null);
+
+  const sendEmail = async () => {
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_KEY!,
+        formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        (result) => {
+          toast.success("Quote has been sent. I will contact you very soon");
+        },
+        (error) => {
+          toast.error(error.text);
+        }
+      );
+    reset();
   };
+
   return (
     <div className="min-h-screen bg-mydark ">
       <div className="max-w-[1324px] mx-auto px-10 2xl:px-0  pt-[74px] lg:pt-[141px]  lg:pb-[310px] pb-[175px] ">
@@ -47,7 +69,8 @@ const Contact = () => {
         </p>
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(sendEmail)}
+          ref={formRef}
           className="mt-[114px]  max-w-[648px] mx-auto space-y-[42px] font-aeonik"
         >
           <div className="flex flex-col w-full">
@@ -117,6 +140,13 @@ const Contact = () => {
                   )}
                 />
               ))}
+
+              <input
+                type="text"
+                value={watch("projectType") || ""}
+                name="projectType2"
+                className="hidden"
+              />
             </div>
           </div>
 
@@ -147,6 +177,12 @@ const Contact = () => {
                 />
               ))}
             </div>
+            <input
+              type="text"
+              value={watch("budget") || ""}
+              name="budget2"
+              className="hidden"
+            />
           </div>
 
           <div className="flex flex-col w-full">
