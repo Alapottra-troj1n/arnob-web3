@@ -55,6 +55,10 @@ const Project = () => {
     getProjectData();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   if (loading) {
     return (
       <div className="min-h-screen h-full bg-mydark flex justify-center items-center">
@@ -75,8 +79,15 @@ const Project = () => {
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.service?.map((service) => (
-                <p className="text-[15px] font-aeonik  font-normal text-gray-500" key={uuidv4()}>{service}</p>
-              )) || <p className="text-[15px] font-normal text-gray-500">None</p>}
+                <p
+                  className="text-[15px] font-aeonik  font-normal text-gray-500"
+                  key={uuidv4()}
+                >
+                  {service}
+                </p>
+              )) || (
+                <p className="text-[15px] font-normal text-gray-500">None</p>
+              )}
             </div>
           </div>
           <div>
@@ -84,8 +95,17 @@ const Project = () => {
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
-              {project?.industry?.map((ind) => <p className="text-[15px] font-aeonik  font-normal text-gray-500" key={uuidv4()}>{ind}</p>) || (
-                <p className="text-[15px] font-aeonik  font-normal text-gray-500">None</p>
+              {project?.industry?.map((ind) => (
+                <p
+                  className="text-[15px] font-aeonik  font-normal text-gray-500"
+                  key={uuidv4()}
+                >
+                  {ind}
+                </p>
+              )) || (
+                <p className="text-[15px] font-aeonik  font-normal text-gray-500">
+                  None
+                </p>
               )}
             </div>
           </div>
@@ -94,7 +114,9 @@ const Project = () => {
               YEAR
             </h2>
             <div className="space-y-2 uppercase text-mygray text-[15px] font-aeonik  font-normal ">
-              {project?.year || <p className="text-[15px] font-normal text-gray-500">None</p>}
+              {project?.year || (
+                <p className="text-[15px] font-normal text-gray-500">None</p>
+              )}
             </div>
           </div>
         </div>
@@ -124,10 +146,8 @@ const Project = () => {
                 src={image.asset.url}
                 width={1600}
                 height={848}
-              
                 alt="project-img"
               />
-         
             </motion.div>
           )) || (
             <p className="text-center text-sm pt-36 text-gray-500">
@@ -136,7 +156,7 @@ const Project = () => {
           )}
         </div>
         <div className="lg:pt-60 lg:pb-40 pt-28 pb-20">
-        <ConnectSection />
+          <ConnectSection />
         </div>
       </div>
     </div>

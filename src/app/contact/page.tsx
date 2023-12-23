@@ -61,17 +61,23 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-mydark ">
       <div className="max-w-[1324px] mx-auto px-10 2xl:px-0  pt-[74px] lg:pt-[141px]  lg:pb-[310px] pb-[175px] ">
-        <h2 className="text-mywhite font-baseNeue font-black text-[48px] leading-none uppercase text-center">
+        <h2 className="hidden lg:block text-mywhite font-baseNeue font-black text-[48px] leading-none uppercase text-center">
           bonjour! <br /> tell me about <br /> your idea
         </h2>
-        <p className="font-aeonik text-xl font-normal text-[#A7B5C4] text-center mt-[38px]">
+        <h2 className="lg:hidden text-mywhite font-baseNeue font-black text-[32px] leading-none uppercase text-center">
+          bonjour! <br /> tell me <br />  about your  idea
+        </h2>
+        <p className="hidden lg:block font-aeonik text-[18px] lg:text-xl font-normal text-[#A7B5C4] text-center mt-[22px] md:mt-[38px]">
           Have A Project in Mind? Please Share More...
+        </p>
+        <p className="lg:hidden font-aeonik text-[18px] lg:text-xl font-normal text-[#A7B5C4] text-center mt-[22px] md:mt-[38px]">
+          Have A Project in Mind? <br /> Please Share More...
         </p>
 
         <form
           onSubmit={handleSubmit(sendEmail)}
           ref={formRef}
-          className="mt-[114px]  max-w-[648px] mx-auto space-y-[42px] font-aeonik"
+          className="mt-[114px]  max-w-[648px] mx-auto space-y-[45px] md:space-y-[42px] font-aeonik"
         >
           <div className="flex flex-col w-full">
             <label className="text-[18px] text-mygray">Name</label>
@@ -196,10 +202,10 @@ const Contact = () => {
               className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9]  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             ></textarea>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center md:justify-end">
             <button
               type="submit"
-              className="h-[78px] w-[170px] bg-mylightgray text-mydark rounded-[39px] font-medium text-[22px] hover:bg-primary transition-all"
+              className=" w-[296px] h-[78px] md:w-[170px] bg-mylightgray text-mydark rounded-[39px] font-medium text-[22px] hover:bg-primary transition-all"
             >
               SUBMIT
             </button>
