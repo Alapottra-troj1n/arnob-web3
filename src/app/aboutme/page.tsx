@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="min-h-screen bg-mydark flex justify-center items-center flex-col overflow-x-hidden">
-      <div className="max-w-[1324px] mx-auto px-10 2xl:px-0   pt-[74px] lg:pt-[155px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
+      <div className="max-w-[1324px] mx-auto px-10 2xl:px-0   pt-[164px] lg:pt-[245px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
         <div >
         <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
               A Visual <br /> Design <br /> Alchemist
