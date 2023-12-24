@@ -5,13 +5,11 @@ import { Project } from "../../lib/types";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-
 const Projects = ({ projects }: { projects: Project[] }) => {
   const [projectsData, setProjectsData] = useState<Project[]>(projects);
   const categoryRef = useRef<HTMLDivElement>(null);
-  
+
   const [category, setCategory] = useState<string>("All");
-  
 
   const handleCategoryChange = (selectedCategory: string) => {
     setCategory(selectedCategory);
@@ -31,14 +29,10 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
-
     const getRootMargin = () => {
-
-     
       const isMobileView = window.innerWidth < 600; // Adjust the threshold as needed
 
-    
-      return isMobileView ? '-200px' : '-300px';
+      return isMobileView ? "-200px" : "-300px";
     };
 
     const observer = new IntersectionObserver(
@@ -49,8 +43,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     );
     observer.observe(categoryRef.current!);
   }, []);
-  
-  
 
   return (
     <div
@@ -59,97 +51,103 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     >
       <motion.div
         className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-20  bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
-          isIntersecting ? "transform translate-y-[90px] opacity-100  border-y border-gray-600 " : "transform -translate-y-full opacity-0"
+          isIntersecting
+            ? "transform translate-y-[90px] opacity-100  border-y border-gray-600 "
+            : "transform -translate-y-full opacity-0"
         }`}
       >
-      <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
-        <button
-          onClick={() => handleCategoryChange('All')}
-          className={`hover:text-primary transition-all ${
-            category === 'All' && 'text-primary underline'
-          }`}
-        >
-          ALL
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Web3')}
-          className={`hover:text-primary transition-all ${
-            category === 'Web3' && 'text-primary underline'
-          }`}
-        >
-          WEB3.0 PROJECTS
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Brand Identity & Logo Design')}
-          className={`hover:text-primary transition-all ${
-            category === 'Brand Identity & Logo Design' &&
-            'text-primary underline'
-          }`}
-        >
-          BRAND IDENTITY & LOGO DESIGN
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Graphic Experimentation')}
-          className={`hover:text-primary transition-all ${
-            category === 'Graphic Experimentation' && 'text-primary underline'
-          }`}
-        >
-          GRAPHIC EXPERIMENTATION
-        </button>
-      </div>
-    </motion.div>
+        <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[12px] md:text-[14px] md:font-normal">
+          <button
+            onClick={() => handleCategoryChange("All")}
+            className={`hover:text-primary transition-all ${
+              category === "All" && "text-primary underline"
+            }`}
+          >
+            ALL
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Web3")}
+            className={`hover:text-primary transition-all ${
+              category === "Web3" && "text-primary underline"
+            }`}
+          >
+            WEB3.0 PROJECTS
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Brand Identity & Logo Design")}
+            className={`hover:text-primary transition-all ${
+              category === "Brand Identity & Logo Design" &&
+              "text-primary underline"
+            }`}
+          >
+            BRAND IDENTITY & LOGO DESIGN
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Graphic Experimentation")}
+            className={`hover:text-primary transition-all ${
+              category === "Graphic Experimentation" && "text-primary underline"
+            }`}
+          >
+            GRAPHIC EXPERIMENTATION
+          </button>
+        </div>
+      </motion.div>
 
-    <motion.div
+      <motion.div
         className={`flex lg:gap-5 gap-3 items-center justify-center z-30 bg-mydark py-5 w-full transition delay-75 ${
           isIntersecting ? " -translate-y-10 opacity-0 " : ""
         }`}
       >
-      <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[14px] md:text-[16px] md:font-normal">
-        <button
-          onClick={() => handleCategoryChange('All')}
-          className={`hover:text-primary transition-all ${
-            category === 'All' && 'text-primary underline'
-          }`}
-        >
-          ALL
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Web3')}
-          className={`hover:text-primary transition-all ${
-            category === 'Web3' && 'text-primary underline'
-          }`}
-        >
-          WEB3.0 PROJECTS
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Brand Identity & Logo Design')}
-          className={`hover:text-primary transition-all ${
-            category === 'Brand Identity & Logo Design' &&
-            'text-primary underline'
-          }`}
-        >
-          BRAND IDENTITY & LOGO DESIGN
-        </button>{' '}
-        /{' '}
-        <button
-          onClick={() => handleCategoryChange('Graphic Experimentation')}
-          className={`hover:text-primary transition-all ${
-            category === 'Graphic Experimentation' && 'text-primary underline'
-          }`}
-        >
-          GRAPHIC EXPERIMENTATION
-        </button>
-      </div>
-    </motion.div>
+        <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[12px] md:text-[14px] md:font-normal">
+          <button
+            onClick={() => handleCategoryChange("All")}
+            className={`hover:text-primary transition-all ${
+              category === "All" && "text-primary underline"
+            }`}
+          >
+            ALL
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Web3")}
+            className={`hover:text-primary transition-all ${
+              category === "Web3" && "text-primary underline"
+            }`}
+          >
+            WEB3.0 PROJECTS
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Brand Identity & Logo Design")}
+            className={`hover:text-primary transition-all ${
+              category === "Brand Identity & Logo Design" &&
+              "text-primary underline"
+            }`}
+          >
+            BRAND IDENTITY & LOGO DESIGN
+          </button>{" "}
+          /{" "}
+          <button
+            onClick={() => handleCategoryChange("Graphic Experimentation")}
+            className={`hover:text-primary transition-all ${
+              category === "Graphic Experimentation" && "text-primary underline"
+            }`}
+          >
+            GRAPHIC EXPERIMENTATION
+          </button>
+        </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-y-[40px] sm:gap-y-[108px] sm:gap-x-[36px] mt-[32px] sm:mt-[88px]">
         {projectsData.map((project) => (
-          <Link key={project._id} className="group" href={`/project/${project.slug.current}`}>
+          <Link
+            key={project._id}
+            className="group"
+            href={`/project/${project.slug.current}`}
+          >
             <motion.div
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
@@ -167,7 +165,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                 )}
                 {project.mainImage.type == "video" && (
                   <video
-                    
                     width="100%"
                     autoPlay
                     muted
@@ -197,7 +194,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                     height="16"
                     viewBox="0 0 22 16"
                     fill="none"
-                    
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -245,7 +241,6 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="group-hover:translate-x-2 transition"
-         
         >
           <path
             d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"

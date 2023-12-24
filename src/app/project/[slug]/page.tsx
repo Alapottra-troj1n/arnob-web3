@@ -62,7 +62,7 @@ const Project = () => {
   if (loading) {
     return (
       <div className="min-h-screen h-full bg-mydark flex justify-center items-center">
-        <div className="lg:pt-24 text-mygray lg:max-w-6xl lg:mx-auto ">
+        <div className="pt-[145px] md:pt-[90px] text-mygray lg:max-w-6xl lg:mx-auto ">
           <h2>Loading...</h2>
         </div>
       </div>
