@@ -89,7 +89,9 @@ export default async function Home() {
             </p>
           </div>
 
-          
+          <div className=" bg-mydark pt-[90px]  md:pt-[148px]">
+            <ClientSlide />
+          </div>
         </div>
       </div>
 
