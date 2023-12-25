@@ -53,11 +53,7 @@ export default async function Home() {
             />
           </div>
           <div className="relative w-[80%] mx-auto animate-fade-up animate-once animate-duration-600 animate-ease-in-out delay-500">
-            <img
-              src="/star.svg"
-              alt="star"
-              className="w-[45px] h-[45px] absolute right-[22.8rem] bottom-[5.5rem] animate-spin-slow   hidden lg:block"
-            />
+          
 
             <img
               src="/mic.svg"
@@ -78,7 +74,11 @@ export default async function Home() {
                 />
                 ARNOB
               </span>{" "}
-              CAN DESIGN FOR YOU
+              CAN DESIGN <span className="relative">  <img
+              src="/star.svg"
+              alt="star"
+              className="w-[45px] h-[45px] absolute left-[-2.7rem] top-[3.5rem] animate-spin-slow   hidden lg:block"
+            />FOR </span> YOU
             </h1>
           </div>
           <div className="mt-[46px] md:mt-[68px] md:w-[40%] mx-auto animate-fade-up animate-delay-500 animate-duration-600 animate-ease-in-out ">
@@ -89,9 +89,7 @@ export default async function Home() {
             </p>
           </div>
 
-          <div className=" bg-mydark pt-[90px]  md:pt-[148px]">
-            <ClientSlide />
-          </div>
+          
         </div>
       </div>
 
