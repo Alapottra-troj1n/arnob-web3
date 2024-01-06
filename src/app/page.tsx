@@ -77,7 +77,7 @@ export default async function Home() {
               CAN DESIGN <span className="relative">  <img
               src="/star.svg"
               alt="star"
-              className="w-[45px] h-[45px] absolute left-[-2.7rem] top-[3.5rem] animate-spin-slow   hidden lg:block"
+              className="w-[45px] h-[45px] absolute left-[-2.7rem] top-[2.5rem]  2xl:left-[-2.7rem] 2xl:top-[3.5rem] animate-spin-slow   hidden lg:block"
             />FOR </span> YOU
             </h1>
           </div>
