@@ -12,7 +12,7 @@ const BlogSection = ({ posts }) => {
       <div className="mt-[107px] grid grid-cols-3 gap-x-[42px] gap-y-[36px] mb-[292px]">
         {posts &&
           posts.map((post, index) => (
-            <div className="rounded-[12px] h-400 overflow-hidden border border-[#16212A]">
+            <div key={post?._id} className="rounded-[12px] h-400 overflow-hidden border border-[#16212A]">
               <img
                 src={post.mainImage?.asset?.url}
                 className="w-full object-cover"
