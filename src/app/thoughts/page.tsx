@@ -28,6 +28,7 @@ const Thoughts = async () => {
   });
 
 
+
   return (
     <div className="min-h-screen bg-mydark flex  items-center flex-col overflow-x-hidden max-w-[1324px] px-10 2xl:px-0 mx-auto">
       <div className="  leading-tight  grid grid-cols-2 pt-[90px] mt-[123px] gap-[228px] ">
