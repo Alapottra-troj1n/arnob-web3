@@ -4,12 +4,12 @@ import { format, parseISO } from "date-fns";
 import Link from "next/link";
 
 const BlogSection = ({ posts }) => {
-  console.log(posts);
+ 
 
   return (
     <>
       {" "}
-      <div className="mt-[107px] grid grid-cols-3 gap-x-[42px] gap-y-[36px] mb-[292px]">
+      <div className="mt-[45px] lg:mt-[107px] grid grid-cols-1 lg:grid-cols-3 gap-x-[42px] gap-y-[36px] mb-[292px]">
         {posts &&
           posts.map((post, index) => (
             <div key={post?._id} className="rounded-[12px] h-400 overflow-hidden border border-[#16212A]">
