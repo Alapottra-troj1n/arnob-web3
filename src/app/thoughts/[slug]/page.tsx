@@ -31,15 +31,15 @@ const SingleBlog = async ({ params }: { params: { slug: string } }) => {
   });
 
   return (
-    <div className="min-h-screen bg-mydark font-aeonik overflow-x-hidden max-w-[784px] px-2 xl:px-0 mx-auto mb-[271px]">
+    <div className="min-h-screen bg-mydark font-aeonik overflow-x-hidden max-w-[784px] px-10 2xl:px-0  mx-auto mb-[271px]">
       <div className="mt-32 text-mywhite  mb-[38px]">
-        <p className="font-normal text-sm mb-[16px] text-[#717F8E]">
+        <p className="font-normal text-[11px] lg:text-sm mb-[16px] text-[#717F8E]">
           {format(parseISO(post[0]?.publishedAt), "MMMM d, yyyy")}
         </p>
-        <h1 className="text-[40px] font-medium">{post[0]?.title}</h1>
+        <h1 className="text-[36px] lg:text-[40px]  font-medium">{post[0]?.title}</h1>
       </div>
 
-      <div className="mb-[98px]">
+      <div className="mb-[65px] lg:mb-[98px]">
         <img
           src={post[0]?.mainImage?.asset?.url}
           alt="main-image"
