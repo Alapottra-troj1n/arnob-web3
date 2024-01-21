@@ -86,7 +86,7 @@ const Contact = () => {
               required
               {...register("name")}
               placeholder="Damien.."
-              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent border-gray-600 focus:placeholder:text-transparent border-b-[1px] mt-2  h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -97,7 +97,7 @@ const Contact = () => {
               required
               {...register("email")}
               placeholder="Damien@gmail.com"
-              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-gray-600 h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -108,7 +108,7 @@ const Contact = () => {
               required
               {...register("companyName")}
               placeholder="Damian Inc"
-              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9] h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-gray-600 h-[70px] pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             />
           </div>
 
@@ -129,7 +129,7 @@ const Contact = () => {
                       className={`py-[14px] px-[21px] rounded-[26.5px] border  ${
                         watch("projectType")?.includes(option)
                           ? "border-[#10355D] bg-[#092038]"
-                          : "border-mygray"
+                          : "border-gray-600"
                       } text-mygray text-[16px] font-aeonik`}
                       onClick={() => {
                         const currentSelection = field.value || [];
@@ -173,7 +173,7 @@ const Contact = () => {
                       className={`py-[14px] px-[21px] rounded-[26.5px] border  ${
                         watch("budget") === option
                           ? "border-[#10355D] bg-[#092038]"
-                          : "border-mygray"
+                          : "border-gray-600"
                       } text-mygray text-[16px] font-aeonik`}
                       onClick={() => field.onChange(option)}
                     >
@@ -199,7 +199,7 @@ const Contact = () => {
               {...register("message")}
               name="message"
               placeholder="I Want To Build.."
-              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-[#8E9BA9]  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
+              className="bg-transparent focus:placeholder:text-transparent border-b-[1px] mt-2 border-gray-600  pl-4 p-1 placeholder-[#717F8E] placeholder:font-aeonik placeholder:text-[18px]"
             ></textarea>
           </div>
           <div className="flex justify-center md:justify-end">
