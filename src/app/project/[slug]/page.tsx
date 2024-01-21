@@ -71,7 +71,7 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
-      <div className="lg:pt-24 text-mygray max-w-[1324px] mx-auto px-10 2xl:px-0">
+      <div className="lg:pt-24 text-mygray max-w-[1524px] mx-auto px-10 2xl:px-0">
         <div className="border-b pb-10 pt-16 border-gray-700 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
             <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
@@ -113,7 +113,7 @@ const Project = () => {
             <h2 className="font-aeonik font-bold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
-            <div className="space-y-2 uppercase text-mygray text-[15px] font-aeonik  font-normal ">
+            <div className="space-y-2 uppercase text-gray-500 text-[15px] font-aeonik  font-normal ">
               {project?.year || (
                 <p className="text-[15px] font-normal text-gray-500">None</p>
               )}
