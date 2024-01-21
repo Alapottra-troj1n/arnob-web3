@@ -194,12 +194,13 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                     height="16"
                     viewBox="0 0 22 16"
                     fill="none"
+                    className="group-hover:translate-x-[6px] transition"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M14.0116 0L13.5791 0.430913L20.9657 7.79391L0.0977868 7.66276H0.0150441L0 8.33724H20.8341L13.5791 15.5691L14.0116 16L21.2516 8.74941L22 8L14.0116 0Z"
                       fill="#CCCCCC"
-                      className="group-hover:fill-primary  transition"
+                      className="group-hover:fill-primary  absolute transition"
                     />
                   </svg>
                 </div>
