@@ -17,23 +17,23 @@ const AboutMe = () => {
             <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase hidden lg:block">
               A Visual Design Alchemist
             </h2>
-            <p className="font-aeonik font-normal text-2xl leading-snug lg:mt-[45px] text-mygray">
+            <p className="font-aeonik font-light text-2xl leading-snug lg:mt-[45px] text-mygray">
               I've been a brand identity expert and design generalist for 8
               years, with the last 5 of those years devoted to working on Web3
               brand identity & Communication design.
             </p>
-            <p className="font-aeonik text-[18px] mt-[30px] text-[#A7B5C4]">
+            <p className="font-aeonik text-[18px] mt-[30px] font-light text-[#A7B5C4]">
               Over that time, I've refined my abilities to create visually
               arresting designs for the online realm. I create dynamic Web3
               visuals and brand identities.
             </p>
-            <p className="font-aeonik text-[18px] mt-[30px] text-[#A7B5C4]">
+            <p className="font-aeonik text-[18px] mt-[30px] font-light text-[#A7B5C4]">
               My path has been one of lifelong learning, consistently committed
               to turning everyday digital encounters into something remarkable
               in the ever-evolving Web 3.0 environment.
             </p>
           </div>
-          <h2 className=" hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 text-[#CCCCCC]">
+          <h2 className="text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 ">
             Download CV
           </h2>
         </div>
@@ -46,7 +46,7 @@ const AboutMe = () => {
         <h1 className="text-center text-[30px] font-extrabold leading-7 uppercase text-primary md:hidden ">
           CRAFT <br /> SOMETHING <br /> SUPERB!
         </h1>
-        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-normal md:font-light md:text-[38px] text-mygray leading-5 md:leading-9">
+        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-5 md:leading-9">
           See What Magic We Can <br /> Create Together!
         </p>
 
