@@ -52,7 +52,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <motion.div
         className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-20  bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
           isIntersecting
-            ? "transform translate-y-[90px] opacity-100  border-y border-gray-600 "
+            ? "transform translate-y-[80px] opacity-100  border-y border-gray-600 "
             : "transform -translate-y-full opacity-0"
         }`}
       >
