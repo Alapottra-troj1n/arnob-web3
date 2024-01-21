@@ -55,7 +55,7 @@ const Thoughts = async () => {
         </div>
       </div>
 
-      <div className="border  w-full border-b border-gray-600 mt-[50px] lg:mt-[70px]"></div>
+      <div className="border  w-full border-b border-[#414C56]/50 mt-[50px] lg:mt-[70px]"></div>
 
       <BlogSection posts={posts} />
     </div>
