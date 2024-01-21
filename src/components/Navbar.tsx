@@ -20,12 +20,12 @@ const Navbar = () => {
       }`}
       ref={navbarRef}
     >
-      <div className="max-w-[1324px] h-[90px] px-10 2xl:px-0 text-[15px] mx-auto flex justify-between items-center text-mygray overflow-x-hidden ">
+      <div className="max-w-[1324px] h-[80px] px-10 2xl:px-0 text-[15px] mx-auto flex justify-between items-center text-mygray overflow-x-hidden ">
         <Link href={"/"}>
           <Image
             src={"/logo.svg"}
-            width={82}
-            height={49}
+            width={72}
+            height={39}
             alt="arnob chakma"
             className="cursor-pointer"
           />
