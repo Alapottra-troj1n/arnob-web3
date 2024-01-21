@@ -30,15 +30,24 @@ const Thoughts = async () => {
 
 
   return (
-    <div className="min-h-screen bg-mydark flex  items-center flex-col overflow-x-hidden max-w-[1324px] px-10 2xl:px-0 mx-auto">
+    <div className="min-h-screen bg-mydark flex  items-center flex-col overflow-x-hidden max-w-[1088px] px-10 2xl:px-0 mx-auto">
       <div className="  leading-tight  grid lg:grid-cols-2 pt-[90px] mt-[73px] lg:mt-[123px] gap-[50px] lg:gap-[228px] ">
         <div>
-          <h1 className="text-[36px] lg:text-[52px] font-aeonik font-normal">
-            Through a Designer's Lens, My Thoughts on Tomorrow.
+          <h1 className="text-[36px] lg:text-[52px] font-aeonik font-light  leading-[3.7rem] whitespace-nowrap hidden lg:block">
+            Through a Designer's <br /> Lens, My Thoughts <br /> On Tomorrow.
+          </h1>
+          <h1 className="text-[36px] lg:text-[52px] font-aeonik font-light   lg:hidden">
+            Through a Designer's  Lens, My Thoughts On Tomorrow.
           </h1>
         </div>
-        <div className=" lg:mt-auto  font-aeonik font-normal text-[17px] leading-relaxed text-[#A7B5C4] lg:px-16">
-          <p className="text-left">
+        <div className=" lg:mt-auto  font-aeonik font-light text-[17px] leading-relaxed text-[#A7B5C4] ">
+          <p className="text-left hidden lg:block">
+            This Is My Personal Design Odyssey Through The <br /> Web3 Universe. Join
+            Me As I Share My Unique <br /> Perspective and Experiences As A Graphic <br />
+            Designer Embracing the Decentralized Future.
+          </p>
+
+          <p className="text-left lg:hidden">
             This Is My Personal Design Odyssey Through The Web3 Universe. Join
             Me As I Share My Unique Perspective and Experiences As A Graphic
             Designer Embracing the Decentralized Future.
@@ -46,7 +55,7 @@ const Thoughts = async () => {
         </div>
       </div>
 
-      <div className="border  w-[1088px] border-b border-[#414C56]/50 mt-[50px] lg:mt-[70px]"></div>
+      <div className="border  w-[1088px] border-b border-gray-600 mt-[50px] lg:mt-[70px]"></div>
 
       <BlogSection posts={posts} />
     </div>
