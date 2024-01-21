@@ -46,7 +46,7 @@ const AboutMe = () => {
         <h1 className="text-center text-[30px] font-extrabold leading-7 uppercase text-primary md:hidden ">
           CRAFT <br /> SOMETHING <br /> SUPERB!
         </h1>
-        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-5 md:leading-9">
+        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-5 md:leading-10">
           See What Magic We Can <br /> Create Together!
         </p>
 
