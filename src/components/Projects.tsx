@@ -47,7 +47,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div
       ref={categoryRef}
-      className="flex md:static justify-center flex-col max-w-[1324px] mx-auto px-8 sm:px-10 2xl:px-0 min-h-screen"
+      className="flex md:static justify-center flex-col max-w-[1324px] mx-auto px-[16px] sm:px-10 2xl:px-0 min-h-screen"
     >
       <motion.div
         className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-20  bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
@@ -152,7 +152,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="cursor-pointer w-[296px] lg:w-full mx-auto"
+              className="cursor-pointer w-full lg:w-full mx-auto"
             >
               <div className="relative  h-[220px] mx-auto  lg:h-[481px] overflow-hidden rounded-[16px] md:rounded-[32px]  w-full ">
                 {project.mainImage.type == "image" && (
