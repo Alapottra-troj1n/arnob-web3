@@ -65,7 +65,7 @@ export default async function Home() {
               alt="digital architect"
               className="hidden md:block absolute right-[8.5rem] top-[-4rem]"
             />
-            <h1 className="text-center text-5xl md:text-[90px] text-primary font-baseNeue font-black  md:leading-[80px]  ">
+            <h1 className="text-center text-5xl leading-[0.85] md:text-[90px] text-primary font-baseNeue font-black  md:leading-[80px]  ">
               <span className="relative">
                 <img
                   src="/mic.svg"

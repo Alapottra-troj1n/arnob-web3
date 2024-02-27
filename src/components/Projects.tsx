@@ -56,7 +56,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
             : "transform -translate-y-full opacity-0"
         }`}
       >
-        <div className="flex md:gap-5 gap-3 leading-[12px] md:leading-normal flex-wrap justify-center lg:justify-start font-medium font-aeonik text-[12px] md:text-[14px] md:font-normal">
+        <div className="flex  md:gap-5 gap-3 leading-[12px] md:leading-normal  items-center justify-center lg:justify-start font-medium font-aeonik text-[12px] md:text-[14px] md:font-normal">
           <button
             onClick={() => handleCategoryChange("All")}
             className={`hover:text-primary transition-all ${
@@ -82,7 +82,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               "text-primary underline"
             }`}
           >
-            BRAND IDENTITY & LOGO DESIGN
+            BRAND IDENTITY 
           </button>{" "}
           /{" "}
           <button
