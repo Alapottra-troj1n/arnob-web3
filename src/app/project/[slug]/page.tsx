@@ -71,51 +71,51 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
-      <div className="lg:pt-24 text-mygray max-w-[1624px] mx-auto px-10 2xl:px-0">
+      <div className="lg:pt-24 text-mygray max-w-[1624px] mx-auto px-[16px] 2xl:px-0">
         <div className="border-b pb-10 pt-16 border-[#414C56]/50 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
-            <h2 className="font-aeonik font-semibold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-semibold text-[18px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               SERVICE
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.service?.map((service) => (
                 <p
-                  className="text-[15px] font-aeonik  font-light text-mygray"
+                  className="text-[16px] font-aeonik  font-light text-mygray"
                   key={uuidv4()}
                 >
                   {service}
                 </p>
               )) || (
-                <p className="text-[15px] font-light text-mygray">None</p>
+                <p className="text-[16px] font-light font-aeonik text-mygray">None</p>
               )}
             </div>
           </div>
           <div>
-            <h2 className="font-aeonik font-semibold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-semibold text-[16px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               INDUSTRY
             </h2>
             <div className="space-y-2 uppercase text-mygray">
               {project?.industry?.map((ind) => (
                 <p
-                  className="text-[15px] font-aeonik  font-light text-mygray"
+                  className="text-[16px] font-aeonik  font-light text-mygray"
                   key={uuidv4()}
                 >
                   {ind}
                 </p>
               )) || (
-                <p className="text-[15px] font-aeonik  font-light text-mygray">
+                <p className="text-[16px] font-aeonik  font-light text-mygray">
                   None
                 </p>
               )}
             </div>
           </div>
           <div>
-            <h2 className="font-aeonik font-semibold text-[15px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
+            <h2 className="font-aeonik font-semibold text-[18px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               YEAR
             </h2>
-            <div className="space-y-2 uppercase text-mygray text-[15px] font-aeonik  font-light ">
+            <div className="space-y-2 uppercase text-mygray text-[16px] font-aeonik  font-light ">
               {project?.year || (
-                <p className="text-[15px] font-light text-mygray">None</p>
+                <p className="text-[16px] font-light text-mygray">None</p>
               )}
             </div>
           </div>
@@ -129,7 +129,7 @@ const Project = () => {
           >
             {project?.title}
           </motion.h1>
-          <p className="lg:w-[70%] w-[80%] mt-9 text-[18px] leading-[29px] font-light font-aeonik ">
+          <p className="lg:w-[70%] w-full mt-9 text-[18px] leading-[28px] font-light font-aeonik ">
             {project?.description}
           </p>
         </div>
