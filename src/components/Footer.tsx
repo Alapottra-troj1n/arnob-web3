@@ -164,7 +164,7 @@ const Footer = () => {
               </button>
             </div>
             <div>
-              <p className="text-[#717F8E] font-normal text-[10px] text-right">
+              <p className="text-[#717F8E] font-light text-[10px] text-right">
                 ©2023 Arnob Chakma. All rights reserved.
               </p>
             </div>

@@ -52,11 +52,11 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <motion.div
         className={`flex  lg:gap-5 gap-3 px-24 sm:px-0 items-center justify-center z-20  bg-mydark py-5 fixed top-0 left-0 w-full transition-transform ${
           isIntersecting
-            ? "transform translate-y-[80px] opacity-100  border-y border-gray-600 "
+            ? "transform translate-y-[80px] opacity-100  border-y border-gray-700  lg:border-gray-600 "
             : "transform -translate-y-full opacity-0"
         }`}
       >
-        <div className="flex  md:gap-5 gap-3 leading-[12px] md:leading-normal  items-center justify-center lg:justify-start font-medium font-aeonik text-[12px] md:text-[14px] md:font-normal">
+        <div className="flex  md:gap-5 gap-3 leading-[12px] md:leading-normal  items-center justify-center lg:justify-start font-light font-aeonik text-[11px] md:text-[14px] md:font-normal">
           <button
             onClick={() => handleCategoryChange("All")}
             className={`hover:text-primary transition-all ${
