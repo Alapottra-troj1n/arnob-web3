@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-mydark ">
-      <div className="max-w-[1324px] mx-auto px-10 2xl:px-0  pt-[164px] lg:pt-[231px]  lg:pb-[310px] pb-[175px] ">
+      <div className="max-w-[1324px] mx-auto px-[16px] 2xl:px-0  pt-[164px] lg:pt-[231px]  lg:pb-[310px] pb-[175px] ">
         <h2 className="hidden lg:block text-mygray font-baseNeue font-black text-[48px] leading-none uppercase text-center">
           bonjour! <br /> tell me about <br /> your idea
         </h2>
