@@ -72,7 +72,7 @@ const Project = () => {
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
       <div className="lg:pt-24 text-mygray max-w-[1624px] mx-auto px-[16px] 2xl:px-0 pt-[52px]">
-        <div className="border-b pb-10 pt-16 border-[#414C56]/50 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
+        <div className="border-b pb-[55px] pt-16 border-[#414C56]/50 grid grid-cols-1 lg:grid-cols-3 max-w-[1324px] mx-auto">
           <div>
             <h2 className="font-aeonik font-semibold text-[18px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
               SERVICE
@@ -120,7 +120,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div lang="en" className="pt-16 max-w-5xl mx-auto">
+        <div lang="en" className="pt-[55px] max-w-[1324px] mx-auto">
           <motion.h1
             initial={{ translateY: 100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
@@ -129,12 +129,12 @@ const Project = () => {
           >
             {project?.title}
           </motion.h1>
-          <p className="lg:w-[70%] w-full mt-9 text-[18px] leading-[28px] font-light font-aeonik ">
+          <p className="lg:w-[70%] w-full mt-[34px] text-[18px] leading-[28px] font-light font-aeonik ">
             {project?.description}
           </p>
         </div>
 
-        <div className="mt-24 flex flex-col w-full h-full gap-y-[6px]">
+        <div className="mt-[90px] flex flex-col w-full h-full gap-y-[6px]">
           {project?.images?.map((image) => (
             <motion.div
               key={uuidv4()}
