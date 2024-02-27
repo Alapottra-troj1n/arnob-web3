@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="min-h-screen bg-mydark flex justify-center items-center flex-col overflow-x-hidden">
-      <div className="max-w-[1324px] mx-auto px-10 2xl:px-0   pt-[164px] lg:pt-[245px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
+      <div className="max-w-[1324px] mx-auto px-[16px] 2xl:px-0   pt-[164px] lg:pt-[245px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
         <div >
         <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
               A Visual <br /> Design <br /> Alchemist
@@ -33,7 +33,7 @@ const AboutMe = () => {
               in the ever-evolving Web 3.0 environment.
             </p>
           </div>
-          <h2 className="text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 ">
+          <h2 className="ml-2 lg:ml-0 text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 ">
             Download CV
           </h2>
         </div>
@@ -46,7 +46,7 @@ const AboutMe = () => {
         <h1 className="text-center text-[30px] font-extrabold leading-7 uppercase text-primary md:hidden ">
           CRAFT <br /> SOMETHING <br /> SUPERB!
         </h1>
-        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-5 md:leading-10">
+        <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-[24px] md:leading-10">
           See What Magic We Can <br /> Create Together!
         </p>
 

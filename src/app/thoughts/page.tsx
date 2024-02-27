@@ -30,8 +30,8 @@ const Thoughts = async () => {
 
 
   return (
-    <div className="min-h-screen bg-mydark flex  items-center flex-col overflow-x-hidden max-w-[1088px] px-10 2xl:px-0 mx-auto">
-      <div className="  leading-tight  grid lg:grid-cols-2 pt-[90px] mt-[73px] lg:mt-[123px] gap-[50px] lg:gap-[228px] ">
+    <div className="min-h-screen bg-mydark flex   flex-col overflow-x-hidden max-w-[1324px] px-[16px] 2xl:px-0 mx-auto">
+      <div className="  leading-tight  grid lg:grid-cols-2 pt-[90px] mt-[50px] lg:mt-[123px] gap-[50px] lg:gap-[228px] ">
         <div>
           <h1 className="text-[36px] lg:text-[52px] font-aeonik font-light  leading-[3.7rem] whitespace-nowrap hidden lg:block">
             Through a Designer's <br /> Lens, My Thoughts <br /> On Tomorrow.
@@ -47,7 +47,7 @@ const Thoughts = async () => {
             Designer Embracing the Decentralized Future.
           </p>
 
-          <p className="text-left lg:hidden">
+          <p className="text-left lg:hidden leading-[1.75]">
             This Is My Personal Design Odyssey Through The Web3 Universe. Join
             Me As I Share My Unique Perspective and Experiences As A Graphic
             Designer Embracing the Decentralized Future.

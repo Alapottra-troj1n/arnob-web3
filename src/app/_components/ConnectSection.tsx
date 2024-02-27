@@ -18,7 +18,7 @@ const ConnectSection = () => {
           <h1 className="text-center text-[30px] font-extrabold leading-7 uppercase text-primary md:hidden ">
             Let's <br /> connect
           </h1>
-          <p className="font-aeonik text-center mt-[26px]  text-[20px] font-normal md:font-light md:text-[38px] text-mygray leading-[24px] md:leading-10">
+          <p className="font-aeonik text-center mt-[26px]  text-[20px] font-light md:font-light md:text-[38px] text-mygray leading-[24px] md:leading-10">
             See What Magic We Can <br /> Create Together!
           </p>
 
