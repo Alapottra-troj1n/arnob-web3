@@ -71,7 +71,7 @@ const Project = () => {
 
   return (
     <div className="min-h-screen bg-mydark overflow-x-hidden">
-      <div className="lg:pt-24 text-mygray max-w-[1624px] mx-auto px-[16px] 2xl:px-0">
+      <div className="lg:pt-24 text-mygray max-w-[1624px] mx-auto px-[16px] 2xl:px-0 pt-[52px]">
         <div className="border-b pb-10 pt-16 border-[#414C56]/50 grid grid-cols-1 lg:grid-cols-3 max-w-5xl mx-auto">
           <div>
             <h2 className="font-aeonik font-semibold text-[18px] text-mygray mt-[42px] lg:mt-0 mb-[26px] lg:mb-11">
@@ -134,7 +134,7 @@ const Project = () => {
           </p>
         </div>
 
-        <div className="mt-24 flex flex-col w-full h-full gap-y-4">
+        <div className="mt-24 flex flex-col w-full h-full gap-y-[6px]">
           {project?.images?.map((image) => (
             <motion.div
               key={uuidv4()}
