@@ -84,11 +84,16 @@ export const metadata: Metadata = {
   WEB3.0 STARTUPS
   THROUGH FUTURE-PROOF TIMELESS DESIGN
   STRATEGY.`,
+  openGraph: {
+    type: "website",
+    title: "Arnob Chakma",
+    description:
+      "HELPING WEB3.0 STARTUPS THROUGH FUTURE-PROOF TIMELESS DESIGN STRATEGY.",
+    images: [{ url: "/opengraph_image.png" }],
+  },
   icons: {
-
     icon: "/mascot.svg",
-    
-    },
+  },
 };
 
 export default function RootLayout({
@@ -103,11 +108,9 @@ export default function RootLayout({
       >
         <Navbar />
         <Toaster />
-        <GlobalWrapper>
-        {children}
-        </GlobalWrapper>
-        
-        <Footer/>
+        <GlobalWrapper>{children}</GlobalWrapper>
+
+        <Footer />
       </body>
     </html>
   );
