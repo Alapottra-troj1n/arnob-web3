@@ -58,7 +58,7 @@ export default async function Home() {
             <img
               src="/mic.svg"
               alt="mic"
-              className="absolute sm:right-[13rem] lg:right-[19.5rem] top-[-3.3rem] lg:top-[-5.2rem] w-14 md:w-auto hidden lg:block animate-bounce animate-ease-in-out animate-duration-[1500ms] animate-infinite"
+              className="absolute sm:right-[13rem] lg:right-[19.5rem] top-[-3.3rem] lg:top-[-5.2rem] w-14 md:w-auto hidden lg:block  "
             />
             <img
               src="/digital-artist.svg"
@@ -70,7 +70,7 @@ export default async function Home() {
                 <img
                   src="/mic.svg"
                   alt="mic"
-                  className="absolute right-[11.8rem] md:right-[12rem] top-[-2.8rem]  w-[63px] h-[61px] md:w-auto lg:hidden animate-bounce animate-duration-[1500ms] animate-ease-in-out animate-infinite"
+                  className="absolute right-[11.8rem] md:right-[12rem] top-[-2.8rem]  w-[63px] h-[61px] md:w-auto lg:hidden"
                 />
                 ARNOB
               </span>{" "}

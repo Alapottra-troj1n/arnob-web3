@@ -21,9 +21,14 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       return;
     }
 
-    const filteredProjects = projects.filter((project) =>
-      project.categories.some((category) => category.title === selectedCategory)
+    const filteredProjects = projects.filter(
+      (project) =>
+        project.categories &&
+        project.categories.some(
+          (category) => category.title === selectedCategory
+        )
     );
+
     setProjectsData(filteredProjects);
   };
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -82,7 +87,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               "text-primary underline"
             }`}
           >
-            BRAND IDENTITY 
+            BRAND IDENTITY
           </button>{" "}
           /{" "}
           <button
