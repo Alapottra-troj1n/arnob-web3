@@ -78,7 +78,9 @@ const aeonik = localFont({
   ],
 });
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://atarnob.com'),
   title: "Arnob Chakma",
   description: `HELPING
   WEB3.0 STARTUPS
@@ -89,7 +91,7 @@ export const metadata: Metadata = {
     title: "Arnob Chakma",
     description:
       "HELPING WEB3.0 STARTUPS THROUGH FUTURE-PROOF TIMELESS DESIGN STRATEGY.",
-    images: [{ url: "/opengraph_image.png" }],
+    images: [{ url: "https://i.ibb.co/nm5C3Zz/opengraph-image.jpg" }],
   },
   icons: {
     icon: "/mascot.svg",

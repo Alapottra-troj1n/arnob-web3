@@ -14,6 +14,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
+    <>
     <div
       className={`bg-mydark w-full overflow-x-hidden z-40  font-aeonik font-normal fixed ${
         pathname.includes("/studio") && "hidden z-0"
@@ -71,47 +72,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div
-          className={`fixed top-3 right-3 md:hidden  transition-all opacity-0 ${
-            navOpen
-              ? "translate-x-0 opacity-100 block "
-              : "transform translate-x-56 hidden opacity-0"
-          }  list-none bg-gray-900  px-8 py-10 rounded-2xl z-40`}
-        >
-          <div className="flex flex-col gap-5 ">
-            <Link className="hover:text-primary transition-colors" href={"/"}>
-              <li>WORK</li>
-            </Link>
-            <Link
-              className="hover:text-primary transition-colors"
-              href={"/thoughts"}
-            >
-              <li>THOUGHTS</li>
-            </Link>
-            <Link
-              className="hover:text-primary transition-colors"
-              href={"/aboutme"}
-            >
-              <li>ABOUT ME</li>
-            </Link>
-
-            <Link
-              className="hover:text-primary transition-colors"
-              href={"/contact"}
-            >
-              <li>CONTACT</li>
-            </Link>
-            <button className="bg-primary w-[134px] h-[48px] font-normal rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
-              <Image
-                src={"/telegram.svg"}
-                width={20}
-                height={17}
-                alt="telegram"
-              />{" "}
-              Telegram
-            </button>
-          </div>
-        </div>
+      
 
         {navOpen ? (
           <X
@@ -132,6 +93,48 @@ const Navbar = () => {
         )}
       </div>
     </div>
+      <div
+      className={`fixed w-full h-full md:hidden   opacity-0 font-aeonik transition-all animate-fade animate-ease-in-out ${
+        navOpen
+          ? "translate-x-0 opacity-100 block "
+          : "transform  opacity-0 hidden"
+      }  list-none bg-[#060A0E]  px-8 py-10 rounded-2xl z-[38] flex justify-center items-center`}
+    >
+      <div className="flex flex-col gap-[12px] text-center text-[32px] font-normal justify-center items-center animate-fade-up animate-ease-in-out animate-delay-200">
+        <Link className="hover:text-primary transition-colors" href={"/"}>
+          <li>WORK</li>
+        </Link>
+        <Link
+          className="hover:text-primary transition-colors"
+          href={"/thoughts"}
+        >
+          <li>THOUGHTS</li>
+        </Link>
+        <Link
+          className="hover:text-primary transition-colors"
+          href={"/aboutme"}
+        >
+          <li>ABOUT ME</li>
+        </Link>
+
+        <Link
+          className="hover:text-primary transition-colors"
+          href={"/contact"}
+        >
+          <li>CONTACT</li>
+        </Link>
+        <button className="bg-primary text-center mt-[57px] w-[134px] h-[48px] font-normal text-[16px] rounded-full flex gap-2 items-center justify-center text-[#E8F1F8]">
+          <Image
+            src={"/telegram.svg"}
+            width={20}
+            height={17}
+            alt="telegram"
+          />{" "}
+          Telegram
+        </button>
+      </div>
+    </div>
+    </>
   );
 };
 
