@@ -36,8 +36,16 @@ const Project = () => {
                         slug{
                         current
                         },
-                        images[] {
-                          asset->{url}
+                        media[]{
+                          photo{
+                            asset->{url}
+                          
+                          },
+                          video{
+                            asset->{url}
+                          
+                          },
+                          type
                         }
                       }
                     
@@ -54,6 +62,8 @@ const Project = () => {
     };
     getProjectData();
   }, []);
+
+  console.log(project);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,7 +96,9 @@ const Project = () => {
                   {service}
                 </p>
               )) || (
-                <p className="text-[16px] font-light font-aeonik text-mygray">None</p>
+                <p className="text-[16px] font-light font-aeonik text-mygray">
+                  None
+                </p>
               )}
             </div>
           </div>
@@ -135,19 +147,32 @@ const Project = () => {
         </div>
 
         <div className="mt-[90px] flex flex-col w-full h-full gap-y-[6px]">
-          {project?.images?.map((image) => (
+          {project?.media?.map((med) => (
             <motion.div
               key={uuidv4()}
               initial={{ translateY: 100, opacity: 0 }}
               whileInView={{ translateY: 0, opacity: 1 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
             >
-              <Image
-                src={image.asset.url}
-                width={1600}
-                height={848}
-                alt="project-img"
-              />
+              {med.type === "photo" ? (
+                <Image
+                  src={med.photo.asset.url}
+                  width={1600}
+                  height={848}
+                  alt="project-img"
+                />
+              ) : (
+                <video
+                  width={1600}
+                  height={848}
+                  autoPlay
+                  muted
+                  loop
+                  className="object-cover hover:scale-100 scale-105 transition-all duration-500"
+                >
+                  <source src={med.video.asset.url} type="video/mp4" />
+                </video>
+              )}
             </motion.div>
           )) || (
             <p className="text-center text-sm pt-36 text-mygray">

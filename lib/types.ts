@@ -24,10 +24,20 @@ interface Project {
   slug: {
     current: string;
   };
-  images: {
-    asset: {
-      url: string;
-    };
+  media: {
+    video: {
+      asset: {
+        url: string;
+      
+      }
+    },
+    photo: {
+      asset: {
+        url: string;
+      
+      }
+    }
+    type:string
   }[];
 }
 

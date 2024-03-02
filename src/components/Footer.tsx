@@ -1,8 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
   return (
-    <div className={`bg-mydark  min-h-[49px] pb-[54px]`}>
+    <div
+      className={`bg-mydark  min-h-[49px] pb-[54px] ${
+        pathname.includes("/studio") && "hidden z-0"
+      }`}
+    >
       <div className=" max-w-[1324px] overflow-x-hidden  mx-auto  hidden lg:block px-[16px] 2xl:px-0">
         <div className="flex justify-between  items-center flex-wrap">
           <div>
