@@ -38,13 +38,13 @@ export default defineType({
           hidden: ({ parent }) => parent?.type !== "image",
         },
         {
-          name: 'video',
-          title: 'Video',
-          type: 'file',
+          name: "video",
+          title: "Video",
+          type: "file",
           options: {
-            accept: 'video/*', // Specify the allowed video file types
+            accept: "video/*", // Specify the allowed video file types
           },
-        
+
           hidden: ({ parent }) => parent?.type !== "video",
         },
         {
@@ -108,21 +108,49 @@ export default defineType({
       },
     }),
     {
-      name: "images",
+      name: "media",
       type: "array",
-      title: "Images",
+      title: "Media",
       of: [
         {
-          type: "image",
-          title: "Image",
-          options: {
-            hotspot: true,
-          },
+          type: "object",
           fields: [
             {
-              name: "alt",
+              name: "type",
               type: "string",
-              title: "Alternative text",
+              title: "Media Type",
+              options: {
+                list: [
+                  { title: "Photo", value: "photo" },
+                  { title: "Video", value: "video" },
+                ],
+                layout: "radio",
+              },
+            },
+            {
+              name: "photo",
+              title: "Photo",
+              type: "image",
+              options: {
+                hotspot: true,
+              },
+              hidden: ({ parent }) => parent?.type !== "photo",
+              fields: [
+                {
+                  name: "alt",
+                  type: "string",
+                  title: "Alternative Text",
+                },
+              ],
+            },
+            {
+              name: "video",
+              title: "Video",
+              type: "file",
+              options: {
+                accept: "video/*", // Specify the allowed video file types
+              },
+              hidden: ({ parent }) => parent?.type !== "video",
             },
           ],
         },
