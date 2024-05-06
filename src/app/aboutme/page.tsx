@@ -1,16 +1,40 @@
+'use client'
 import Image from "next/image";
 
 const AboutMe = () => {
+  const handleDownload = () => {
+      
+      const link = document.createElement('a');
+     
+      link.href = 'https://utfs.io/f/6cc58073-3e5f-45bc-8bad-c8645aa6cecb-2gj.pdf';
+      
+      link.download = 'Arnob CV.pdf';
+     
+      link.click();
+  };
+
+
   return (
     <div className="min-h-screen bg-mydark flex justify-center items-center flex-col overflow-x-hidden">
       <div className="max-w-[1324px] mx-auto px-[16px] 2xl:px-0   pt-[164px] lg:pt-[245px] grid lg:grid-cols-2 grid-cols-1 gap-[36px] lg:gap-[90px] lg:pb-[310px] pb-[175px] ">
-        <div >
-        <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
-              A Visual <br /> Design <br /> Alchemist
-            </h2>
-          <Image src={'/arnob.png'} alt="arnob" height={551} width={408} className="ml-auto hidden lg:block"  />
-          <Image src={'/arnob.png'} alt="arnob" height={334} width={296} className="mx-auto lg:hidden"  />
-          
+        <div>
+          <h2 className="font-baseNeue font-black text-[32px] lg:text-[56px] leading-none text-primary uppercase lg:hidden mb-[30px]">
+            A Visual <br /> Design <br /> Alchemist
+          </h2>
+          <Image
+            src={"/arnob.png"}
+            alt="arnob"
+            height={551}
+            width={408}
+            className="ml-auto hidden lg:block"
+          />
+          <Image
+            src={"/arnob.png"}
+            alt="arnob"
+            height={334}
+            width={296}
+            className="mx-auto lg:hidden"
+          />
         </div>
         <div>
           <div className="ml-2">
@@ -33,9 +57,12 @@ const AboutMe = () => {
               in the ever-evolving Web 3.0 environment.
             </p>
           </div>
-          <h2 className="ml-2 lg:ml-0 text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 ">
+          <h2 onClick={handleDownload} className="ml-2 lg:ml-0 text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[70px] underline-offset-4 decoration-1 ">
             Download CV
           </h2>
+          <a href="https://read.cv/arnob" target="_blank" className="ml-2 lg:ml-0 text-mygray hover:text-primary transition-all  cursor-pointer text-[26px] underline font-aeonik font-light pt-[10px] underline-offset-4 decoration-1 ">
+            Read CV
+          </a>
         </div>
       </div>
 

@@ -237,9 +237,9 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       )}
 
       <div className="mt-[39px] md:mt-[86px] flex gap-3 items-center justify-center group">
-        <h2 className="text-center font-medium md:font-normal font-aeonik text-xs md:text-[17px] cursor-pointer hover:text-primary transition-all ">
+        <a href="https://www.behance.net/arnobchakma11" target="_blank" className="text-center font-medium md:font-normal font-aeonik text-xs md:text-[17px] cursor-pointer hover:text-primary transition-all ">
           View More Works
-        </h2>
+        </a>
         <svg
           width="22"
           height="16"

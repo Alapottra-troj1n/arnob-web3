@@ -19,82 +19,90 @@ const Footer = () => {
             </p>
           </div>
           <div className="uppercase flex flex-wrap gap-4 text-[17px] font-normal font-aeonik">
-            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
-              Behance
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 14 13"
-                className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
-                  fill="#CCDAE7"
-                  stroke="#CCDAE7"
-                  className="group-hover:fill-primary transition"
-                  stroke-width="0.2"
-                />
-              </svg>
-            </div>
-            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
-              Twitter
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 14 13"
-                className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
-                  fill="#CCDAE7"
-                  stroke="#CCDAE7"
-                  className="group-hover:fill-primary transition"
-                  stroke-width="0.2"
-                />
-              </svg>
-            </div>
-            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
-              Linkedin
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 14 13"
-                className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
-                  fill="#CCDAE7"
-                  stroke="#CCDAE7"
-                  className="group-hover:fill-primary transition"
-                  stroke-width="0.2"
-                />
-              </svg>
-            </div>
-            <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
-              Dribble
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 14 13"
-                className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
-                  fill="#CCDAE7"
-                  stroke="#CCDAE7"
-                  className="group-hover:fill-primary transition"
-                  stroke-width="0.2"
-                />
-              </svg>
-            </div>
+            <a href="https://www.behance.net/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
+                Behance
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 13"
+                  className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
+                    fill="#CCDAE7"
+                    stroke="#CCDAE7"
+                    className="group-hover:fill-primary transition"
+                    stroke-width="0.2"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="https://twitter.com/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
+                Twitter
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 13"
+                  className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
+                    fill="#CCDAE7"
+                    stroke="#CCDAE7"
+                    className="group-hover:fill-primary transition"
+                    stroke-width="0.2"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/atarnob/" target="_blank">
+              <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
+                Linkedin
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 13"
+                  className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
+                    fill="#CCDAE7"
+                    stroke="#CCDAE7"
+                    className="group-hover:fill-primary transition"
+                    stroke-width="0.2"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a href="https://dribbble.com/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[8px] group cursor-pointer hover:text-primary">
+                Dribble
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 14 13"
+                  className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.40322 0.4L4.30334 0.399928L4.30315 0.499814L4.30229 0.963426L4.3021 1.06377L4.40245 1.06361L12.0832 1.0513L0.974217 12.0142L0.974216 12.0142L0.97377 12.0146L0.929312 12.059L0.860093 12.1282L0.927753 12.1989L1.28207 12.5691L1.35272 12.643L1.425 12.5707L12.4481 1.55501L12.4361 9.09176L12.4359 9.19211L12.5363 9.19192L13.0002 9.19106L13.1001 9.19088L13.1 9.09099L13.0938 0.506142L13.0937 0.406286L12.9939 0.406214L4.40322 0.4Z"
+                    fill="#CCDAE7"
+                    stroke="#CCDAE7"
+                    className="group-hover:fill-primary transition"
+                    stroke-width="0.2"
+                  />
+                </svg>
+              </div>
+            </a>
           </div>
           <div>
             <button className="group bg-primary w-[134px] h-[48px] rounded-full font-aeonik font-normal flex gap-2 items-center justify-center text-[#E8F1F8]">
@@ -121,42 +129,50 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto py-4 lg:hidden px-[16px] 2xl:px-0">
         <div className="grid grid-cols-2">
           <div className="uppercase grid grid-cols-1 gap-5 text-sm font-aeonik text-[15px] font-medium">
-            <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
-              Behance
-              <Image
-                src={"/footer-arrow.svg"}
-                alt="star"
-                width={18}
-                height={13}
-              />
-            </div>
-            <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary">
-              Twitter
-              <Image
-                src={"/footer-arrow.svg"}
-                alt="star"
-                width={18}
-                height={13}
-              />
-            </div>
-            <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
-              Linkedin
-              <Image
-                src={"/footer-arrow.svg"}
-                alt="star"
-                width={18}
-                height={13}
-              />
-            </div>
-            <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
-              Dribble
-              <Image
-                src={"/footer-arrow.svg"}
-                alt="star"
-                width={18}
-                height={13}
-              />
-            </div>
+            <a href="https://www.behance.net/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
+                Behance
+                <Image
+                  src={"/footer-arrow.svg"}
+                  alt="star"
+                  width={18}
+                  height={13}
+                />
+              </div>
+            </a>
+            <a href="https://twitter.com/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary">
+                Twitter
+                <Image
+                  src={"/footer-arrow.svg"}
+                  alt="star"
+                  width={18}
+                  height={13}
+                />
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/atarnob/" target="_blank">
+              <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
+                Linkedin
+                <Image
+                  src={"/footer-arrow.svg"}
+                  alt="star"
+                  width={18}
+                  height={13}
+                />
+              </div>
+            </a>
+            <a href="https://dribbble.com/arnobchakma11" target="_blank">
+              <div className="flex items-center gap-[6px] group cursor-pointer hover:text-primary ">
+                Dribble
+                <Image
+                  src={"/footer-arrow.svg"}
+                  alt="star"
+                  width={18}
+                  height={13}
+                />
+              </div>
+            </a>
           </div>
 
           <div className="flex flex-col justify-between items-center md:items-end gap-10">
